@@ -6,22 +6,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: CXD
+title: zhangquan
 brief-intro: Linux Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://cxd2014.github.io" # the base hostname & protocol for your site
+url: "https://zhangquan1995.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: wanyier2
 facebook_username: profile.php?id=100006606157322
-github_username:  Cxd2014
-email: chengxd2015@qq.com
-#weibo_username: 3115521wh
-#zhihu_username: gaohaoyang
+github_username:  zhangquan1995
+email: zhangquan2014@foxmail.com
+#weibo_username: 爱上小萌女
+#zhihu_username: 爱上小萌女
 
-#description_footer: 嵌入式成长记录
+#description_footer: 成长记录
 
 # comments
 # two ways to comment, only choose one, and use your own short name

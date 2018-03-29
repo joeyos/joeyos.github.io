@@ -12,62 +12,30 @@
   /**
      * 内容JSON
      */
-    var demoContent = [{
-        demo_link: 'https://github.com/Cxd2014/LinuxDriversLearn',
-        img_link: '/css/linux.jpg',
-        //code_link: 'https://github.com/Cxd2014/LinuxDriversLearn',
-        title: 'Linux驱动学习',
-        core_tech: 'Linux驱动',
-        description: '韦东山老师的教程写的Linux驱动'
-    },{
-        demo_link: 'https://www.gitbook.com/book/cxd2014/an_introduction_to_gcc/details',
-        img_link: '/css/4566.jpg',
-        //code_link: 'https://www.gitbook.com/book/cxd2014/an_introduction_to_gcc/details',
-        title: 'An_introduction_to_GCC中文版',
-        core_tech: 'GCC',
-        description: 'An_introduction_to_GCC中文翻译版本'
-    },{
-        demo_link: 'https://github.com/Cxd2014/lua_epoll_server',
-        img_link: '/css/54542.jpg',
-        //code_link: 'https://www.gitbook.com/book/cxd2014/an_introduction_to_gcc/details',
-        title: '基于Lua的HTTP服务器',
-        core_tech: 'epoll lua HTTP服务器',
-        description: '基于Lua的HTTP服务器'
-    },{
-        demo_link: 'https://github.com/Cxd2014/Qt-Application',
-        img_link: '/css/4056.jpg',
-        //code_link: 'https://github.com/Cxd2014/Qt-Application',
-        title: 'Qt应用程序',
-        core_tech: 'C++ Qt',
-        description: '用Qt Designer写的小程序'
-    },{
-        demo_link: 'https://github.com/Cxd2014/DataStruct',
-        img_link: '/css/1234.jpg',
-        //code_link: 'https://github.com/Cxd2014/DataStruct',
-        title: 'C语言版数据结构',
-        core_tech: 'C 数据结构',
-        description: 'C语言版数据结构'
-    },{
-        demo_link: 'http://v.youku.com/v_show/id_XMTYyMDE2NDcwOA==.html',
-        img_link: '/css/1.png',
-        //code_link: 'http://v.youku.com/v_show/id_XMTYyMDE2NDcwOA==.html',
+    var demoContent = [
+	{
+        demo_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?from=s1.8-1-1.2',
+        img_link: '/css/Graduate.png',
+        //code_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?from=s1.8-1-1.2',
         title: '毕业相册',
-        core_tech: '毕业相册',
-        description: '大学毕业电子相册'
-    },{
-        demo_link: 'http://v.youku.com/v_show/id_XNzk2MDc4NTEy.html',
-        img_link: '/css/2.jpg',
-        //code_link: 'http://v.youku.com/v_show/id_XNzk2MDc4NTEy.html',
-        title: '穿墙术',
-        core_tech: 'AE特效之穿墙',
-        description: 'AE特效之穿墙'
-    },{
-        demo_link: 'http://v.youku.com/v_show/id_XOTE2OTM3NTc2.html',
-        img_link: '/css/3.jpg',
-        //code_link: 'http://v.youku.com/v_show/id_XOTE2OTM3NTc2.html',
-        title: '分身术',
-        core_tech: 'AE特效之分身术',
-        description: 'AE特效之分身术'
+        core_tech: 'Ae and Edius',
+        description: '纪念我们一起走过的青春'
+    },
+	{
+        demo_link: 'https://github.com/zhangquan1995/QQ_Manager',
+        img_link: '/css/QQ_Manager.png',
+        //code_link: 'https://github.com/zhangquan1995/QQ_Manager',
+        title: 'Qt腾讯管家',
+        core_tech: 'Qt',
+        description: '用Qt做的电脑管家小程序'
+    },
+	{
+        demo_link: 'https://github.com/zhangquan1995/C_Manager',
+        img_link: '/css/C_Manager.png',
+        //code_link: 'https://github.com/zhangquan1995/C_Manager',
+        title: 'C语言课程设计',
+        core_tech: 'C/C++',
+        description: '曾经很菜，现在依然很菜'
     }
   ];
 
