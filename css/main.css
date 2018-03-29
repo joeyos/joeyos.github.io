@@ -211,7 +211,7 @@ pre code {
 
 table {
   color: #333333;
-  font-size: 1.5em;
+  font-size: 0.9em;
   text-align: center;
   line-height: 40px;
   border: 2px solid #363636;
@@ -1375,7 +1375,7 @@ nav a {
   padding: 0px;
   color: #999;
   font-weight: 700;
-  font-size: .8em;
+  font-size: .9em;
   text-shadow: none;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
