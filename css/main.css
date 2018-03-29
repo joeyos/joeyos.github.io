@@ -619,7 +619,7 @@ img::-moz-selection {
   }
 
   .navigation__flink {
-    color: #999;
+    color: #CCC;
     margin-top: 40px;
     text-align: left;
     font-size: 0.8em;
