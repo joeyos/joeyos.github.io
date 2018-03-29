@@ -5,7 +5,7 @@ description: 欢迎来到我的个人站~
 # 头像里面的标题
 avatarTitle: zhangquan
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
+avatarDesc: 图像处理 / 机器学习
 url: "http://zhangquan1995.github.io"
 
 # Comment
@@ -15,7 +15,7 @@ comment:
 
 # Social
 social:
-    weibo: 爱上小萌女 
+    weibo: zhangquan1995 
     github: zhangquan1995
     # twitter: 
     mail: zhangquan2014@foxmail.com
