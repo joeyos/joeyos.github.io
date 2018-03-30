@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 关于我 
+type: page
 ---
 
 西安电子科技大学研究僧，喜欢研究一些新技术。
