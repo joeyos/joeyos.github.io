@@ -4,49 +4,66 @@ layout: default
 
 <div class="page clearfix" index>
     <div class="left">
-		<!-- 图片代码 开始 -->
-		<div id="fsD1" class="focus" style="margin-left:400px">  
-			<div id="D1pic1" class="fPic">  
-				<div class="fcon" style="display: none;">
-					<a target="_blank" href="https://zhangquan1995.github.io">
-						<img src='http://i2.bvimg.com/639183/7f812ee2128b55bb.png'>
-					</a>
-					<span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Computer Safe</a></span>
-				</div>
-				
-				<div class="fcon" style="display: none;">
-					<a target="_blank" href="https://zhangquan1995.github.io">
-						<img src='http://i1.bvimg.com/639183/fd53a509bd9648d6.jpg'>
-					</a>
-					<span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Stars are fashionable</a></span>
-				</div>
-				
-				<div class="fcon" style="display: none;">
-					<a target="_blank" href="https://zhangquan1995.github.io">
-						<img src='http://i1.bvimg.com/639183/be3007922812c85e.jpg'>
-					</a>
-					<span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">He is famous</a></span>
-				</div>
-				
-				<div class="fcon" style="display: none;">
-					<a target="_blank" href="https://zhangquan1995.github.io">
-						<img src='http://i1.bvimg.com/639183/db01dcada61e0702.jpg'>
-					</a>
-					<span class="shadow"><a target="_blank" href="https://zhangquan1995.github.io">Intelligent</a></span>
-				</div>    
-			</div>
-			<div class="fbg">  
-			<div class="D1fBt" id="D1fBt">  
-				<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
-				<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
-				<a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
-				<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
-			</div>  
-			</div>  
-			<span class="prev"></span>   
-			<span class="next"></span>    
-		</div>
-		<!-- 图片代码 结束 -->
+        <h1>Welcome to zhangquan's Blog!</h1>
+        <small>业精于勤荒于嬉,行成于思毁于随</small>
+        <hr>
+        <ul>
+            {% for post in paginator.posts %}
+              <li>
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                    </div>
+                    <div class="label-card">
+                        {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
+                        {% endif %}
+                    </div>
+                    <div class="label-card">
+                        {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                    </div>
+
+                    <div class="label-card">
+                    {% include category.html %}
+                    </div>
+
+                    <div class="label-card">
+                    {% include tag.html %}
+                    </div>
+                </div>
+                <div class="excerpt">
+                    {{post.excerpt}}
+                </div>
+                <div class="read-all">
+                    <a  href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            {% endfor %}
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          {% if paginator.previous_page %}
+            <a href="/index.html" class="previous"><i class="fa fa-angle-double-left"></i></a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><i class="fa fa-angle-left"></i></a>
+          {% else %}
+            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
+          {% endif %}
+          <span class="page_number ">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-angle-right"></i></a>
+            <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}" class="next"><i class="fa fa-angle-double-right"></i></a>
+          {% else %}
+            <span class="next disable"><i class="fa fa-angle-right"></i></span>
+            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
+          {% endif %}
+        </div>
     </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
     <div class="right">
@@ -141,24 +158,3 @@ layout: default
 </div>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
 <!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
-
-<!-- 图片样式表开始 -->
-<script type="text/javascript">
-	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
-	Qfast(false, 'widgets', function () {
-		K.tabs({
-			id: 'fsD1',   //焦点图包裹id  
-			conId: "D1pic1",  //** 大图域包裹id  
-			tabId:"D1fBt",  
-			tabTn:"a",
-			conCn: '.fcon', //** 大图域配置class       
-			auto: 1,   //自动播放 1或0
-			effect: 'fade',   //效果配置
-			eType: 'click', //** 鼠标事件
-			pageBt:true,//是否有按钮切换页码
-			bns: ['.prev', '.next'],//** 前后按钮配置class                          
-			interval: 2000  //** 停顿时间  
-		}) 
-	})  
-</script>
-<!-- 图片样式表结束 -->
