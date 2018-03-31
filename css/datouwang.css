@@ -1,6 +1,6 @@
 /*Ωπµ„Õº*/
-.focus{ position:relative; width:600px; height:335px; background-color: #000; float: left;}  
-.focus img{ width: 600px; height: 335px;} 
+.focus{ position:relative; width:400px; height:225px; background-color: #000; float: left;}  
+.focus img{ width: 400px; height: 225px;} 
 .focus .shadow .title{width: 260px; height: 65px;padding-left: 30px;padding-top: 20px;}
 .focus .shadow .title a{ text-decoration:none; color:#fff; font-size:14px; font-weight:bolder; overflow:hidden; }
 .focus .btn{ position:absolute; bottom:34px; left:510px; overflow:hidden; zoom:1;} 
