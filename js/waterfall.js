@@ -21,16 +21,16 @@
       core_tech: 'Qt',
       description: '利用Qt制作的腾讯电脑管家'
     }, {
-      demo_link: 'https://github.com/zhangquan1995/ImgChange',
+      demo_link: 'https://zhangquan1995.github.io/ImgChange',
       img_link: 'http://i4.bvimg.com/639183/d4de18a5a9f1027f.png',
       code_link: 'https://github.com/zhangquan1995/ImgChange',
       title: '网页轮播图',
       core_tech: 'JavaScript',
       description: '图片自动切换，鼠标点击切换'
     }, {
-      demo_link: 'https://github.com/zhangquan1995/ImgChange',
+      demo_link: 'https://zhangquan1995.github.io/3DPhoto',
       img_link: 'http://i4.bvimg.com/639183/a8ad6f92aa479097.png',
-      code_link: 'https://github.com/zhangquan1995/ImgChange',
+      code_link: 'https://github.com/zhangquan1995/3DPhoto',
       title: '3D图像切换',
       core_tech: 'CSS3',
       description: '百度前端学院网页3D图像切换'
