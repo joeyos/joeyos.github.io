@@ -6,7 +6,7 @@
 .focus .btn{ position:absolute; bottom:34px; left:510px; overflow:hidden; zoom:1;} 
 .focus .btn a{position:relative; display:inline; width:13px; height:13px; border-radius:7px; margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53"; text-decoration:none; text-align:center; outline:0; float:left; background:#1f1b1b; }  
 .focus .btn a:hover,.focus .btn a.current{  cursor:pointer;background:#D9D9D9;}  
-.focus .fPic{ position:relative; left:0px; top:0px; }  
+.focus .fPic{ position:absolute; left:0px; top:0px; }  
 .focus .D1fBt{ overflow:hidden; zoom:1;  height:16px; z-index:10;  }  
 .focus .shadow{ width:100%; position:absolute; bottom:0; left:0px; z-index:10; height:80px; line-height: 80px; background:rgba(0,0,0,0.6);    
 filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;  display:block;  text-align:left; }  
