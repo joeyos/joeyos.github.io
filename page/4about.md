@@ -18,7 +18,7 @@ type: page
 
 * GitHub：[zhangquan1995](https://github.com/zhangquan1995)
 * email：zhangquan2014@foxmail.com
-* [Weibo](http://weibo.com/zhangquan1995)
+* Weibo：[爱上小萌女](http://weibo.com/zhangquan1995)
 
 ## 关于本站
 
