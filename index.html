@@ -8,18 +8,37 @@ layout: default
     <style type="text/css">
 
         img {
-            width: 320px;
-            height: 180px;
+            width: 250px;
+            height: 140px;
             vertical-align: middle;
             position: absolute;
             box-shadow: 0 4px 20px 2px rgba(0, 0, 0, .2);
         }
 
+        .stage {
+            -webkit-perspective: 2000px;
+            perspective: 2000px;
+            -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+            width: 800px;
+            height: 200px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+			background-color: #CCC;
+        }
+
         .rounding-3d {
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-            width: 320px;
-            height: 180px;
+            width: 250px;
+            height: 140px;
             position: relative;
             -webkit-animation: rotate 13s ease-in-out infinite;
             animation: rotate 13s ease-in-out infinite;
@@ -33,83 +52,83 @@ layout: default
         }
 
         .rounding-3d img:nth-child(1) {
-            -webkit-transform: rotateY(0deg) translateZ(500px);
-            transform: rotateY(0deg) translateZ(500px);
+            -webkit-transform: rotateY(0deg) translateZ(350px);
+            transform: rotateY(0deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(2) {
-            -webkit-transform: rotateY(0deg) translateZ(500px);
-            transform: rotateY(0deg) translateZ(500px);
+            -webkit-transform: rotateY(0deg) translateZ(350px);
+            transform: rotateY(0deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(3) {
-            -webkit-transform: rotateY(45deg) translateZ(500px);
-            transform: rotateY(45deg) translateZ(500px);
+            -webkit-transform: rotateY(45deg) translateZ(350px);
+            transform: rotateY(45deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(4) {
-            -webkit-transform: rotateY(45deg) translateZ(500px);
-            transform: rotateY(45deg) translateZ(500px);
+            -webkit-transform: rotateY(45deg) translateZ(350px);
+            transform: rotateY(45deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(5) {
-            -webkit-transform: rotateY(90deg) translateZ(500px);
-            transform: rotateY(90deg) translateZ(500px);
+            -webkit-transform: rotateY(90deg) translateZ(350px);
+            transform: rotateY(90deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(6) {
-            -webkit-transform: rotateY(90deg) translateZ(500px);
-            transform: rotateY(90deg) translateZ(500px);
+            -webkit-transform: rotateY(90deg) translateZ(350px);
+            transform: rotateY(90deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(7) {
-            -webkit-transform: rotateY(135deg) translateZ(500px);
-            transform: rotateY(135deg) translateZ(500px);
+            -webkit-transform: rotateY(135deg) translateZ(350px);
+            transform: rotateY(135deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(8) {
-            -webkit-transform: rotateY(135deg) translateZ(500px);
-            transform: rotateY(135deg) translateZ(500px);
+            -webkit-transform: rotateY(135deg) translateZ(350px);
+            transform: rotateY(135deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(9) {
-            -webkit-transform: rotateY(180deg) translateZ(500px);
-            transform: rotateY(180deg) translateZ(500px);
+            -webkit-transform: rotateY(180deg) translateZ(350px);
+            transform: rotateY(180deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(10) {
-            -webkit-transform: rotateY(180deg) translateZ(500px);
-            transform: rotateY(180deg) translateZ(500px);
+            -webkit-transform: rotateY(180deg) translateZ(350px);
+            transform: rotateY(180deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(11) {
-            -webkit-transform: rotateY(225deg) translateZ(500px);
-            transform: rotateY(225deg) translateZ(500px);
+            -webkit-transform: rotateY(225deg) translateZ(350px);
+            transform: rotateY(225deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(12) {
-            -webkit-transform: rotateY(225deg) translateZ(500px);
-            transform: rotateY(225deg) translateZ(500px);
+            -webkit-transform: rotateY(225deg) translateZ(350px);
+            transform: rotateY(225deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(13) {
-            -webkit-transform: rotateY(270deg) translateZ(500px);
-            transform: rotateY(270deg) translateZ(500px);
+            -webkit-transform: rotateY(270deg) translateZ(350px);
+            transform: rotateY(270deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(14) {
-            -webkit-transform: rotateY(270deg) translateZ(500px);
-            transform: rotateY(270deg) translateZ(500px);
+            -webkit-transform: rotateY(270deg) translateZ(350px);
+            transform: rotateY(270deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(15) {
-            -webkit-transform: rotateY(315deg) translateZ(500px);
-            transform: rotateY(315deg) translateZ(500px);
+            -webkit-transform: rotateY(315deg) translateZ(350px);
+            transform: rotateY(315deg) translateZ(350px);
         }
 
         .rounding-3d img:nth-child(16) {
-            -webkit-transform: rotateY(315deg) translateZ(500px);
-            transform: rotateY(315deg) translateZ(500px);
+            -webkit-transform: rotateY(315deg) translateZ(350px);
+            transform: rotateY(315deg) translateZ(350px);
         }
 
         .hide {
@@ -218,24 +237,26 @@ layout: default
         <h1>Welcome to zhangquan's Blog!</h1>
         <small>业精于勤荒于嬉,行成于思毁于随</small>
         <hr>
-        <div class="rounding-3d">
-            <img src="./1.png">
-            <img class="hide" src="./1.png">
-            <img src="./2.png">
-            <img class="hide" src="./2.png">
-            <img src="./3.png">
-            <img class="hide" src="./3.png">
-            <img src="./4.png">
-            <img class="hide" src="./4.png">
-            <img src="./5.png">
-            <img class="hide" src="./5.png">
-            <img src="./6.png">
-            <img class="hide" src="./6.png">
-            <img src="./7.png">
-            <img class="hide" src="./7.png">
-            <img src="./8.png">
-            <img class="hide" src="./8.png">
-        </div>
+		<div class="stage">
+			<div class="rounding-3d">
+				<img src="./1.png">
+				<img class="hide" src="./1.png">
+				<img src="./2.png">
+				<img class="hide" src="./2.png">
+				<img src="./3.png">
+				<img class="hide" src="./3.png">
+				<img src="./4.png">
+				<img class="hide" src="./4.png">
+				<img src="./5.png">
+				<img class="hide" src="./5.png">
+				<img src="./6.png">
+				<img class="hide" src="./6.png">
+				<img src="./7.png">
+				<img class="hide" src="./7.png">
+				<img src="./8.png">
+				<img class="hide" src="./8.png">
+			</div>
+		</div>
 		
     </div>
     <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
