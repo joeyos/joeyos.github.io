@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-![logo](http://i1.bvimg.com/639183/041f0262ec30afc6.jpg)
+![logo](http://i4.bvimg.com/639183/103fb079c0c3a9f9.png)
 
 ## 关于我
 
