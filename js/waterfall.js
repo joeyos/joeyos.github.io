@@ -26,14 +26,21 @@
       code_link: 'https://github.com/zhangquan1995/ImgChange',
       title: '网页轮播图',
       core_tech: 'JavaScript',
-      description: '图片自动切换，鼠标点击切换'
+      description: '图片自动切换，按钮切换'
     }, {
       demo_link: 'https://zhangquan1995.github.io/3DPhoto',
       img_link: 'http://i4.bvimg.com/639183/a8ad6f92aa479097.png',
       code_link: 'https://github.com/zhangquan1995/3DPhoto',
       title: '3D图像切换',
       core_tech: 'CSS3',
-      description: '百度前端学院网页3D图像切换'
+      description: '百度前端学院3D图像切换'
+    }, {
+      demo_link: 'https://zhangquan1995.github.io/AdaptiveScreen',
+      img_link: 'http://i2.bvimg.com/639183/ea248b3f7c21815f.png',
+      code_link: 'https://github.com/zhangquan1995/AdaptiveScreen',
+      title: 'Adaptive Screen',
+      core_tech: 'CSS3',
+      description: 'Div长宽比自适应屏幕尺寸'
     }
   ];
 
