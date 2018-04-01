@@ -31,7 +31,7 @@ type: page
 ## 联系我
 
 * GitHub：[zhangquan1995](https://github.com/zhangquan1995)
-* email：zhangquan2014@foxmail.com
+* Email：[zhangquan2014@foxmail.com](https://mailto:zhangquan2014@foxmail.com)
 * WeiBo：[爱上小萌女](http://weibo.com/zhangquan1995)
 
 此博客文章均属于原创和译文，欢迎转载但请**注明文章出处**
