@@ -9,6 +9,8 @@ type: page
 * content
 {:toc}
 
+![logo](http://i1.bvimg.com/639183/041f0262ec30afc6.jpg)
+
 ## 关于我
 
 西安电子科技大学研究僧，喜欢研究一些新技术。
