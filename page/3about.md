@@ -11,11 +11,11 @@ type: page
 
 ![logo](http://i4.bvimg.com/639183/103fb079c0c3a9f9.png)
 
-西安电子科技大学研究僧，喜欢研究一些新技术。
+<center>西安电子科技大学研究僧，喜欢研究一些新技术</center>
 
-平时喜欢整理个人博客，逛逛技术论坛。
+<center>平时喜欢整理个人博客，逛逛技术论坛</center>
 
-热衷于图像处理和深度学习，对DSP/FPGA有所了解。
+<center>热衷于图像处理和深度学习，对DSP/FPGA有所了解<center>
 
 ## 关于本站 
 
