@@ -19,21 +19,29 @@ type: page
 
 ## 关于本站 
 
+<center>
 驽马十驾，功在不舍！
-
+</center>
+<center>
 本站将记录个人的技术生涯~
+</center>
 
+<center>
 2017.09.01 | 西安电子科技大学研究僧
 2017.06.16 | 大学本科毕业 
 2016.03.06 | 在Git上搭建Blog
 2015.10.19 | 入驻Github 
+</center>
 
 ## 联系我
 
+<center>
 * GitHub：[zhangquan1995](https://github.com/zhangquan1995)
 * Email：[zhangquan2014@foxmail.com](mailto:zhangquan2014@foxmail.com)
 * WeiBo：[爱上小萌女](http://weibo.com/zhangquan1995)
-
-此博客均属原创或译文，欢迎转载但请**注明出处**
+</center>
+<center>
+此博客均属原创或译文，欢迎转载但**请注明出处**
+</center>
 
 
