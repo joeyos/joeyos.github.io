@@ -41,6 +41,13 @@
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
       description: 'Div长宽比自适应屏幕尺寸'
+    }, {
+      demo_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
+      img_link: 'http://i2.bvimg.com/639183/4fdd2d01185e473b.png',
+      code_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
+      title: 'Matlab车牌识别',
+      core_tech: 'Matlab',
+      description: 'License plate recognition'
     }
   ];
 
