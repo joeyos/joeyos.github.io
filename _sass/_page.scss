@@ -86,6 +86,14 @@
             }
         }
     }
+	.focus {
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
     .anchor {
         display: none;
     }
@@ -190,6 +198,13 @@
             float: left;
             padding: 10px 14px;
             font-size: 14px;
+			
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin-left: auto;
+			margin-right: auto;
         }
         .anchor {
             display: block;
