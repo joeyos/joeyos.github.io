@@ -28,6 +28,13 @@
       core_tech: 'JavaScript',
       description: '图片自动切换，按钮切换'
     }, {
+      demo_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
+      img_link: 'http://i2.bvimg.com/639183/ce1e6453a5e06034.png',
+      code_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
+      title: '毕业电子相册',
+      core_tech: 'Ae & Edius',
+      description: '献给悄悄流逝的四年时光'
+    }, {
       demo_link: 'https://zhangquan1995.github.io/3DPhoto',
       img_link: 'http://i4.bvimg.com/639183/a8ad6f92aa479097.png',
       code_link: 'https://github.com/zhangquan1995/3DPhoto',
@@ -40,7 +47,7 @@
       code_link: 'https://github.com/zhangquan1995/AdaptiveScreen',
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
-      description: 'Div长宽比自适应屏幕尺寸'
+      description: 'div长宽比自适应屏幕尺寸'
     }, {
       demo_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
       img_link: 'http://i2.bvimg.com/639183/4fdd2d01185e473b.png',
@@ -48,6 +55,13 @@
       title: 'Matlab车牌识别',
       core_tech: 'Matlab',
       description: 'License plate recognition'
+    }, {
+      demo_link: 'https://github.com/zhangquan1995/QQbyQt',
+      img_link: 'http://i1.bvimg.com/639183/ac50f25d99d75ab4.png',
+      code_link: 'https://github.com/zhangquan1995/QQbyQt',
+      title: 'QQ局域网聊天',
+      core_tech: 'Qt',
+      description: 'A program made with Qt'
     }
   ];
 
