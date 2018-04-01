@@ -15,7 +15,7 @@ type: page
 
 <center>平时喜欢整理个人博客，逛逛技术论坛</center>
 
-<center>热衷于图像处理和机器学习，对DSP/FPGA有所了解</center>
+<center>热衷于图像处理和机器学习，对嵌入式有所了解</center>
 
 ## 关于本站 
 
