@@ -77,6 +77,14 @@
             }
         }
     }
+	.focus {
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
     .right {
         .wrap {
             .side {
@@ -170,5 +178,13 @@
                 }
             }
         }
+		.focus {
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		}
     }
 }
