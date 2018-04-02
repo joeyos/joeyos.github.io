@@ -26,7 +26,7 @@ description_footer:
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: 6a4dab53a3a218a161f9a2a79c206a54
+baidu_tongji_id: e5a35e62751b1f5305cfc174a374fd4d
 google_analytics_id: UA-116772911-1 # google 分析追踪id
 
 # Build settings
