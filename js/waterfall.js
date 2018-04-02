@@ -83,9 +83,9 @@ function contentInit(content) {
   //     htmlArr.push('<h3 class="demo-title">')
   //     htmlArr.push('<a href="'+content[i].demo_link+'">'+content[i].title+'</a>')
   //     htmlArr.push('</h3>')
-  //     htmlArr.push('<p>主要技术：'+content[i].core_tech+'</p>')
+  //     htmlArr.push('<p>Skills：'+content[i].core_tech+'</p>')
   //     htmlArr.push('<p>'+content[i].description)
-  //     htmlArr.push('<a href="'+content[i].code_link+'">源代码 <i class="fa fa-code" aria-hidden="true"></i></a>')
+  //     htmlArr.push('<a href="'+content[i].code_link+'">Code <i class="fa fa-code" aria-hidden="true"></i></a>')
   //     htmlArr.push('</p>')
   //     htmlArr.push('</div>')
   // }
