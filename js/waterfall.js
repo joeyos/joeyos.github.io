@@ -18,7 +18,7 @@
       img_link: 'http://i1.bvimg.com/639183/abd793ee5c4bbef2t.jpg',
       code_link: 'https://github.com/zhangquan1995/QQ_Manager',
       title: '腾讯电脑管家',
-      core_tech: 'Qt',
+      core_tech: 'Qt & C++',
       description: '利用Qt制作的腾讯电脑管家'
     }, {
       demo_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
@@ -46,7 +46,7 @@
       img_link: 'http://i2.bvimg.com/639183/a9efb52d155fff36t.jpg',
       code_link: 'https://github.com/zhangquan1995/QQbyQt',
       title: 'QQ局域网聊天',
-      core_tech: 'Qt',
+      core_tech: 'Qt & C++',
       description: 'A program made with Qt'
     }, {
       demo_link: 'https://zhangquan1995.github.io/AdaptiveScreen',
