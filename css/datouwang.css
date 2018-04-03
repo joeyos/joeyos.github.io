@@ -21,8 +21,8 @@
 .focus .D1fBt{ overflow:hidden; zoom:1;  height:16px; z-index:10;  }  
 .focus .shadow{ width:100%; position:absolute; bottom:0; left:0px; z-index:10; height:80px; line-height: 70px; background:rgba(0,0,0,0.6);    
 filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;  display:block;  text-align:left; }  
-.focus .shadow a{ text-decoration:none; color:#999; font-size:20px; overflow:hidden; margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1";}
-.focus .shadow a:hover{ text-decoration:none; color:#CCC; font-size:20px; overflow:hidden; margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1";}   
+.focus .shadow a{ text-decoration:none; color:#CCC; font-size:20px; overflow:hidden; margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1";}
+.focus .shadow a:hover{ text-decoration:none; color:#999; font-size:20px; overflow:hidden; margin-left:10px; font-family: "\5FAE\8F6F\96C5\9ED1";}   
 .focus .fcon{ position:relative; width:100%; float:left;  display:none; background:#000  }  
 .focus .fcon img{ display:block; }  
 .focus .fbg{bottom:10px; right:10px; position:absolute; height:21px; text-align:center; z-index: 200; }  
