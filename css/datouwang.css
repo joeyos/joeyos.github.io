@@ -31,9 +31,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorst
 .focus .D1fBt .current,.focus .D1fBt a:hover{background:#D9D9D9;}    
 .focus .D1fBt img{display:none}    
 .focus .D1fBt i{display:none; font-style:normal; }    
-.focus .prev,.focus .next{position:absolute;width:40px;height:74px;background: url(../images/focus_btn.png) no-repeat;}
-.focus .prev{top: 50%;margin-top: -37px; left: 0;background-position:0 -74px; cursor:pointer; }  
-.focus .next{top: 50%;margin-top: -37px; right: 0;  background-position:-40px -74px;  cursor:pointer;}  
-
-
+.focus .prev,.focus .next{position:absolute;width:40px;height:74px;}
+.focus .prev{top: 50%;margin-top: -37px; left: 0;cursor:pointer; }  
+.focus .next{top: 50%;margin-top: -37px; right: 0;cursor:pointer;}
 
