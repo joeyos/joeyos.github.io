@@ -9,7 +9,7 @@ type: page
 * content
 {:toc}
 
-![logo](http://i4.bvimg.com/639183/103fb079c0c3a9f9.png)
+![logo](/images/logo.png)
 
 <center>西安电子科技大学研究僧，喜欢研究一些新技术</center>
 
