@@ -15,49 +15,49 @@
   var demoContent = [
 	{
       demo_link: 'https://github.com/zhangquan1995/QQ_Manager',
-      img_link: '/images/QQManager.jpg',
+      img_link: '/images/demo/QQManager.jpg',
       code_link: 'https://github.com/zhangquan1995/QQ_Manager',
       title: '腾讯电脑管家',
       core_tech: 'Qt & C++',
       description: '利用Qt制作的腾讯电脑管家'
     }, {
       demo_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
-      img_link: '/images/Graduate.jpg',
+      img_link: '/images/demo/Graduate.jpg',
       code_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
       title: '毕业电子相册',
       core_tech: 'Ae & Edius',
       description: '献给悄悄流逝的四年时光'
     }, {
       demo_link: 'https://zhangquan1995.github.io/ImgChange',
-      img_link: '/images/ImgChange.jpg',
+      img_link: '/images/demo/ImgChange.jpg',
       code_link: 'https://github.com/zhangquan1995/ImgChange',
       title: '网页轮播图',
       core_tech: 'JavaScript',
       description: '图片自动切换，按钮切换'
     }, {
       demo_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
-      img_link: '/images/LicensePlateRecognition.jpg',
+      img_link: '/images/demo/LicensePlateRecognition.jpg',
       code_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
       title: 'Matlab车牌识别',
       core_tech: 'Matlab',
       description: 'License plate recognition'
     }, {
       demo_link: 'https://github.com/zhangquan1995/QQbyQt',
-      img_link: '/images/QQbyQt.jpg',
+      img_link: '/images/demo/QQbyQt.jpg',
       code_link: 'https://github.com/zhangquan1995/QQbyQt',
       title: 'QQ局域网聊天',
       core_tech: 'Qt & C++',
       description: 'A program made with Qt'
     }, {
       demo_link: 'https://zhangquan1995.github.io/AdaptiveScreen',
-      img_link: '/images/AdaptiveScreen.jpg',
+      img_link: '/images/demo/AdaptiveScreen.jpg',
       code_link: 'https://github.com/zhangquan1995/AdaptiveScreen',
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
       description: 'div长宽比自适应屏幕尺寸'
     }, {
       demo_link: 'https://zhangquan1995.github.io/3DPhoto',
-      img_link: '/images/3DPhoto.jpg',
+      img_link: '/images/demo/3DPhoto.jpg',
       code_link: 'https://github.com/zhangquan1995/3DPhoto',
       title: '3D图像切换',
       core_tech: 'CSS3',
