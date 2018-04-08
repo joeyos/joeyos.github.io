@@ -52,6 +52,7 @@ plt.imshow(lena) # 显示图片
 plt.axis('off') # 不显示坐标轴
 plt.show()
 ```
+
 ### 绘图
 
 ```python
@@ -91,7 +92,9 @@ yticks(np.linspace(-1,1,5,endpoint=True))
 # 在屏幕上显示
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408205552998?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/1.png)
+
 **改变线条的颜色和粗细**
 
 ```python
@@ -100,21 +103,27 @@ plot(X, C, color="blue", linewidth=2.5, linestyle="-")
 plot(X, S, color="red",  linewidth=2.5, linestyle="-")
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408210752734?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/2.png)
+
 **设置边界**
 
 ```python
 xlim(X.min()*1.1, X.max()*1.1)
 ylim(C.min()*1.1, C.max()*1.1)
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408211329776?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/3.png)
+
 **设置记号**
 
 ```python
 xticks( [-np.pi, -np.pi/2, 0, np.pi/2, np.pi])
 yticks([-1, 0, +1])
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408211637656?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/4.png)
+
 **设置记号标签**
 
 ```python
@@ -124,7 +133,9 @@ xticks([-np.pi, -np.pi/2, 0, np.pi/2, np.pi],
 yticks([-1, 0, +1],
        [r'$-1$', r'$0$', r'$+1$'])
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408211802912?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/5.png)
+
 **移动中轴线**
 
 ```python
@@ -136,7 +147,9 @@ ax.spines['bottom'].set_position(('data',0))
 ax.yaxis.set_ticks_position('left')
 ax.spines['left'].set_position(('data',0))
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408211921275?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/6.png)
+
 **添加图注**
 
 ```python
@@ -145,7 +158,9 @@ plot(X, S, color="red",  linewidth=2.5, linestyle="-", label="sine")
 
 legend(loc='upper left')
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408212042808?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/7.png)
+
 **标注特殊点**
 
 ```python
@@ -166,8 +181,11 @@ annotate(r'$\cos(\frac{2\pi}{3})=-\frac{1}{2}$',
          xytext=(-90, -50), textcoords='offset points', fontsize=16,
          arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408212324789?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/8.png)
+
 ### 一些常见类型图
+
 **普通图**
 
 ```python
@@ -181,8 +199,11 @@ plot (X, Y+1, color='blue', alpha=1.00)
 plot (X, Y-1, color='blue', alpha=1.00)
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213132791?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/9.png)
+
 美化一下：
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -204,8 +225,10 @@ plt.xlim(-np.pi,np.pi), plt.xticks([])
 plt.ylim(-2.5,2.5), plt.yticks([])
 # savefig('../figures/plot_ex.png',dpi=48)
 plt.show()
+
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213145718?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/10.png)
 
 **散点图**
 
@@ -219,8 +242,11 @@ Y = np.random.normal(0,1,n)
 scatter(X,Y)
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213421116?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/11.png)
+
 美化一下：
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -238,7 +264,9 @@ plt.ylim(-1.5,1.5), plt.yticks([])
 # savefig('../figures/scatter_ex.png',dpi=48)
 plt.show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213437586?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/12.png)
+
 **条形图**
 
 ```
@@ -258,8 +286,11 @@ for x,y in zip(X,Y1):
 ylim(-1.25,+1.25)
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213759197?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/13.png)
+
 美化一下：
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -286,8 +317,11 @@ plt.ylim(-1.25,+1.25), plt.yticks([])
 plt.show()
 
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213811677?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/14.png)
+
 **3D图**
+
 ```python
 from pylab import *
 from mpl_toolkits.mplot3d import Axes3D
@@ -304,5 +338,6 @@ ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='hot')
 
 show()
 ```
-![这里写图片描述](https://img-blog.csdn.net/20180408213938274?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW5ncXVhbjIwMTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/20180408/15.png)
 
