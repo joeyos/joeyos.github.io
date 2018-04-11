@@ -125,7 +125,7 @@ $(document).ready(function(){
                     {% assign first = site.tags.first %}
                     {% assign max = first[1].size %}
                     {% assign min = max %}
-                    {% for tag in site.tags offset:1 limit: 10 %}
+                    {% for tag in site.tags offset:1 %}
                       {% if tag[1].size > max %}
                         {% assign max = tag[1].size %}
                       {% elsif tag[1].size < min %}
