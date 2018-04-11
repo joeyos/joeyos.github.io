@@ -103,7 +103,7 @@ $(document).ready(function(){
                     Categories
                 </div>
                 <ul class="content-ul" cate>
-                    {% for category in site.categories %}
+                    {% for category in site.categories offset: 0 limit: 10%}
                     <li>
                         <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="categories-list-item" cate="{{ category | first }}">
                             <span class="name">
@@ -125,7 +125,7 @@ $(document).ready(function(){
                     {% assign first = site.tags.first %}
                     {% assign max = first[1].size %}
                     {% assign min = max %}
-                    {% for tag in site.tags offset:1 %}
+                    {% for tag in site.tags offset:1 limit: 10 %}
                       {% if tag[1].size > max %}
                         {% assign max = tag[1].size %}
                       {% elsif tag[1].size < min %}
