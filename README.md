@@ -3,4 +3,4 @@
 http://zhangquan1995.github.io/
 
 
-![](/images/page.png)
+![](/images/page.jpg)
