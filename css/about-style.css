@@ -1,0 +1,52 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.container{margin: 0 auto; max-width: 1000px;}
+.row{width: 103%; float: left; margin: 110px -1.5%;}
+
+/*= common css to all effects =*/
+.single-member{
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-o-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	border-radius: 100px/10px;
+	height:350px;width: 280px; float: left; margin: 15px 2.5%; background-color: #1F1F1F; text-align: center; position: relative;}
+.single-member:hover {
+	box-shadow: 0 0 35px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 35px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 35px rgba(0,0,0,0.8);
+	-o-box-shadow: 0 0 35px rgba(0,0,0,0.8);}
+.member-image img{max-width: 100%; vertical-align: middle;}
+h3 {color:#fff;font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
+h5 {color:#fff;font-size: 16px; font-weight: normal; margin: 0 0 15px; line-height: 22px;}
+p {font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 20px;text-indent: 0em;text-align: left;}
+/*= common css to all effects end =*/
+
+/*= effect-1 css =*/
+.effect-1{border-radius: 5px 5px 0 0; padding-bottom: 40px;background-color: rgb(225, 49, 87);}
+.effect-1 .member-image {border: 2px solid #fff; border-color: #fff;border-radius: 100%; display: inline-block; margin-top: -72px; overflow: hidden; transition: 0.3s;}
+
+
+/*= effect-2 css =*/
+.effect-2{border-radius: 5px 5px 0 0; padding-bottom: 40px;background-color: rgb(229, 100, 43);}
+.effect-2 .member-image {border: 2px solid #ffc974; border-radius: 100%; display: inline-block; margin-top: -72px; overflow: hidden; transition: 0.3s;}
+/*= effect-2 css end =*/
+
+/*= effect-3 css =*/
+.effect-3{border-radius: 5px 5px 0 0; padding-bottom: 40px;background-color: rgb(31, 181, 84);}
+.effect-3 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -72px; overflow: hidden; transition: 0.3s;}
+.effect-3 ul{list-style-position: inside;text-align: left;}
+.effect-3 ul,li{margin: 0px;list-style:none;font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 10px;text-indent: 0em;text-align: left;}
+.effect-3 a{color: #e7e7e7;text-decoration: none; }
+.effect-3 a:hover{color: #fff;text-decoration: none;background-color: #2bcd64;}
+/*= effect-3 css end =*/
+
+
+/*= Media Query 
+=============== */
+@media only screen and (max-width: 980px){
+	.row{width: 100%; margin: 110px 0;}
+	.team-members{text-align: center;}
+	.single-member{float: none; display: inline-block; vertical-align: bottom;}
+}
+/*= Media Query End
+=================== */
