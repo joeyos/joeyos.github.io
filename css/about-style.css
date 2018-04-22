@@ -33,10 +33,10 @@
 /*= effect-3 css =*/
 .effect-3{border-radius: 5px 5px 0 0; padding-bottom: 40px;background-color: rgb(31, 181, 84);}
 .effect-3 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -72px; overflow: hidden; transition: 0.3s;}
-.effect-3 .about-ul{list-style-position: inside;text-align: left;}
-.effect-3 .about-ul,.about-li{margin: 0px;list-style:none;font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 10px;text-indent: 0em;text-align: left;}
-.effect-3 .about-a{color: #e7e7e7;text-decoration: none; }
-.effect-3 .about-a:hover{color: #fff;text-decoration: none;background-color: #2bcd64;}
+.effect-3 .about-ul {list-style-position: inside;text-align: left;}
+.effect-3 .about-ul,.about-li {margin: 0px;list-style:none;font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 10px;text-indent: 0em;text-align: left;}
+.effect-3 .about-a {color: #e7e7e7;text-decoration: none; }
+.effect-3 .about-a:hover {color: #fff;text-decoration: none;background-color: #2bcd64;}
 /*= effect-3 css end =*/
 
 
