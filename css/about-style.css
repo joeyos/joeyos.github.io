@@ -1,6 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 .container{margin: 0 auto; margin-left: auto; margin-right: auto; max-width: 1000px;}
-.row{width: 100%; float: left; margin-left: auto; margin-right: auto; margin: 80px -1.5%;}
+.row{width: 100%; float: left; margin-left: auto; margin-right: auto; margin-top: 80px;}
 /*= common css to all effects =*/
 .single-member{
 	box-shadow: 0 0 20px rgba(0,0,0,0.8);
