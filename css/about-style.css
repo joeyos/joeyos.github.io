@@ -17,12 +17,12 @@
 .member-image img{max-width: 100px; max-height: 100px; vertical-align: middle;}
 .single-member .about-h3 {color:#fff;font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
 .single-member .about-h5 {color:#fff;font-size: 16px; font-weight: normal; margin: 0 0 15px; line-height: 22px;}
-.single-member .about-p {font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; padding: 0 20px;text-indent: 0em;text-align: left;}
+.single-member .about-p {font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 20px;text-indent: 0em;text-align: left;}
 /*= common css to all effects end =*/
 
 /*= effect-1 css =*/
 .effect-1{border-radius: 5px 5px 5px 5px; padding-bottom: 40px;background-color: rgb(225, 49, 87);}
-.effect-1 .member-image {border: 2px solid #fff; border-color: #fff;border-radius: 100%; display: inline-block; margin-top: -50x; overflow: hidden; transition: 0.3s;}
+.effect-1 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
 
 
 /*= effect-2 css =*/
