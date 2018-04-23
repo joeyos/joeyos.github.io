@@ -62,6 +62,13 @@
       title: '3D图像切换',
       core_tech: 'CSS3',
       description: '百度前端学院3D图像切换'
+    }, {
+      demo_link: 'https://zhangquan1995.github.io/AboutPage/',
+      img_link: '/images/demo/AboutPage.jpg',
+      code_link: 'https://github.com/zhangquan1995/AboutPage',
+      title: 'css阴影',
+      core_tech: 'CSS3',
+      description: 'About子页css圆角+阴影'
     }
   ];
 
