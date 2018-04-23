@@ -18,6 +18,8 @@
 .single-member .about-h3 {color:#fff;font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
 .single-member .about-h5 {color:#fff;font-size: 16px; font-weight: normal; margin: 0 0 15px; line-height: 22px;}
 .single-member .about-p {font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; margin: 0px auto; padding: 0 20px;text-align: left;}
+.single-member .about-a {color: #8F90C5;text-decoration: none; }
+.single-member .about-a:hover {color: #fff;text-decoration: none;}
 /*= common css to all effects end =*/
 
 /*= effect-1 css =*/
@@ -33,10 +35,6 @@
 /*= effect-3 css =*/
 .effect-3{border-radius: 5px 5px 5px 5px; padding-bottom: 40px;background-color: #2b2b3c;/*rgb(31, 181, 84);*/}
 .effect-3 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
-.effect-3 .about-ul {list-style-position: inside;text-align: left;}
-.effect-3 .about-ul,.about-li {margin: 0px;list-style:none;font-family: '微软雅黑';color:#fff;font-size: 13px; font-weight: normal; line-height: 25px; padding: 0 10px;text-indent: 0em;text-align: left;}
-.effect-3 .about-a {color: #e7e7e7;text-decoration: none; }
-.effect-3 .about-a:hover {color: #fff;text-decoration: none;background-color: #2bcd64;}
 /*= effect-3 css end =*/
 
 
