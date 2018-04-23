@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
+*{margin: 0; padding: 0; margin-left: auto; margin-right: auto; box-sizing: border-box;}
 .container{margin: 0 auto; max-width: 1000px;}
 .row{width: 103%; float: left; margin: 80px -1.5%;}
 /*= common css to all effects =*/
