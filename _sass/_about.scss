@@ -7,8 +7,3 @@
         }
     }
 }
-.deep{
-    transition: .32s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-    transform-style: preserve-3d;
-    transform: perspective(1600px) rotateX(14deg) translateZ(-200px);
-}
