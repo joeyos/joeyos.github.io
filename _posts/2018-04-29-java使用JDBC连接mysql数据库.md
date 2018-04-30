@@ -245,3 +245,118 @@ public class ExecuteDDL
 | 4 | 王大锤 | 男 | 2018-04-23 | 178.88 |
 | 5 | 赵铁柱 | 男 | 2018-12-21 | 179.35 |
 
+## PreparedStatement 和 Statement
+
+对于两条结构基本相似的SQL语句，只是执行插入时的值不同而已，可以使用占位符（？）参数的SQL语句代替。**相比Statement，PreparedStatement具有效率高、无须拼接字符串、可以防止SQL注入等优点。**
+
+有人主张：“在JDBC应用中，如果你已经是稍有水平开发者，你就应该始终以**PreparedStatement**代替**Statement**。也就是说，在任何时候都不要使用Statement。”
+
+**mysql.ini配置文件(放在工程文件下)：**
+
+```
+;mysql配置
+[mysql]
+;驱动程序名
+driver=com.mysql.jdbc.Driver
+;URL指向要访问的数据库名scutcs
+url=jdbc:mysql://127.0.0.1:3306/scutcs
+;用户名
+user=root
+;密码
+password=zhang110
+```
+
+**下面将简要比较一下两者的执行100条插入语句的时间：**
+
+```java
+import java.sql.*;
+import java.util.*;//Properties
+import java.io.*;//FileInputStream
+public class PreparedStatementTest 
+{
+	/*
+	1.PreparedStatement预编译SQL语句性能更好
+	2.PreparedStatement无须拼接SQL语句
+	3.PreparedStatement可以防止SQL注入,安全
+	4.问号提供占位符，executeUpdate执行前用setXXX赋值
+	eg：
+		PreparedStatement Pstatement = conn.prepareStatement(
+			"insert into student values(null,?,1)");
+		Pstatement.setString(1,"姓名1");
+		Pstatement.setString(2,"姓名2");
+		...
+		Pstatement.executeUpdate();
+	*/
+	private String driver;
+	private String url;
+	private String user;
+	private String password;
+	public void initParam(String paramFile)throws Exception
+	{
+		//使用Properties类来加载属性文件
+		//load外部配置文件
+		Properties props = new Properties();
+		props.load(new FileInputStream(paramFile));
+		driver = props.getProperty("driver");
+		url = props.getProperty("url");
+		user = props.getProperty("user");
+		password = props.getProperty("password");
+		//加载驱动
+		Class.forName(driver);
+	}
+	public void insertUseStatement()throws Exception
+	{
+		long start = System.currentTimeMillis();
+		try(
+			//获取数据库连接
+			Connection conn = DriverManager.getConnection(url,user,password);
+			//使用Connection来创建一个Statement对象
+			Statement stmt = conn.createStatement())
+		{
+			//需要使用100条SQL语句来插入100条记录
+			for(int i=0;i<100;i++)
+			{
+				stmt.executeUpdate("insert into student_table values("
+					+ "null,'姓名"+i+"',1)");
+			}
+			System.out.println("使用Statement费时："
+				+(System.currentTimeMillis()-start));
+		}
+	}
+	public void insertUsePrepare()throws Exception
+	{
+		long start = System.currentTimeMillis();
+		try(
+			//获取数据库
+			Connection conn = DriverManager.getConnection(url,user,password);
+			//使用Connection来创建一个PreparedStatement对象
+			PreparedStatement pstmt = conn.prepareStatement(
+				"insert into student_table values(null,?,1)"))
+		{
+			//100次记录时间
+			for(int i=0;i<100;i++)
+			{
+				pstmt.setString(1,"姓名"+i);
+				pstmt.executeUpdate();
+			}
+			System.out.println("PreparedStatement费时："
+				+(System.currentTimeMillis()-start));
+		}
+	}
+	public static void main(String[] args)throws Exception
+	{
+		PreparedStatementTest pt = new PreparedStatementTest();
+		pt.initParam("mysql.ini");
+		pt.insertUseStatement();
+		pt.insertUsePrepare();
+	}
+}
+```
+
+执行的结果为：
+
+|Statement|PreparedStatement
+|---|---|
+|8193|5380|
+
+很明显，PreparedStatement的**效率要高一些**。
