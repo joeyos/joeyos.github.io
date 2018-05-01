@@ -21,6 +21,11 @@ zhihu_username: zhangquan1995
 
 description_footer:
 
+#gitment
+comment_gitment_repo: zhangquan1995.github.io
+comment_gitment_clientId: 61c2858fcad8e31a384a
+comment_gitment_clientSecret: a42b6e659f4321919ec21b8af2db7e41ffbaf9e2
+
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
