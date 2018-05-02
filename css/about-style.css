@@ -41,7 +41,7 @@
 /*= Media Query 
 =============== */
 @media screen and (max-width: 980px)
-	.row{width: 100%; margin-top: 80px;}
+	.row{width: 100%; margin-top: 280px;}
 	.team-members{text-align: center;}
 	.single-member{float: none; display: inline-block; vertical-align: bottom;}
 }
