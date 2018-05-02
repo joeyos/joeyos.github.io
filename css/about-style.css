@@ -40,8 +40,8 @@
 
 /*= Media Query 
 =============== */
-@media only screen and (max-width: 980px){
-	.row{width: 100%; margin: 50px 0;}
+@media screen and (max-width: 980px)
+	.row{width: 100%; margin-top: 80px;}
 	.team-members{text-align: center;}
 	.single-member{float: none; display: inline-block; vertical-align: bottom;}
 }
