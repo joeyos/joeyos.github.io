@@ -40,7 +40,7 @@
 
 /*= Media Query 
 =============== */
-@media screen and (max-width: 980px
+@media screen and (max-width: 980px)
 {
 	.row{width: 100%; margin-top: 60px; margin-bottom: 20px;}
 	.team-members{text-align: center;}
