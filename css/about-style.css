@@ -23,7 +23,7 @@
 /*= common css to all effects end =*/
 
 /*= effect-1 css =*/
-.effect-1{border-radius: 5px 5px 5px 5px; margin-top: 60px; margin-bottom: 20px; padding-bottom: 40px;background-color: #2b2b3c;/*rgb(225, 49, 87);*/}
+.effect-1{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #2b2b3c;/*rgb(225, 49, 87);*/}
 .effect-1 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
 
 
