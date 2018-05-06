@@ -192,9 +192,9 @@
             display: block;
             visibility: visible;
             position: fixed;
-            top: 76px;
+            margin-top: 76px;
             right: 2.5%;
-            padding: 55px 110px;
+            padding: 5px 10px;
             color: #333;
             font-size: 15px;
             background-color: #f8f8fd;
@@ -217,7 +217,7 @@
             width: auto;
             max-width: 95%;
             padding: 0;
-            top: 76px;
+            margin-top: 76px;
             right: 2.5%;
             opacity: 0;
             transform-origin: 100% 0;
@@ -225,7 +225,7 @@
             transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
         }
         .right-show {
-            z-index: 999;
+            //z-index: 999;
             visibility: visible;
             opacity: 1;
             transform: scale(1);
