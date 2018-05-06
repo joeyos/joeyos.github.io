@@ -1,7 +1,4 @@
 header {
-    position: fixed;
-    margin:0px auto;
-    top:0px;
     background: #222;
     height: 52px;
     color: #9d9d9d;
@@ -16,6 +13,7 @@ header {
         }
     }
     .wrapper {
+        position: fixed;
         width: 1140px;
         margin: 0 auto;
         line-height: 52px;
