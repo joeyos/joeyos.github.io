@@ -2,15 +2,15 @@
 .focus{ 
 	position:relative; 
 	width: 100%; 
-	//height: 335px; 
+	/*height: 335px; */
 	padding-top: 56.25%; 
 	background-color: #000; 
 	float: left;
 } 
 .focus img{ 
 	width: 100%;
-	//width: 600px; 
-	//height: 335px;
+	/*width: 600px; 
+	height: 335px;*/
 } 
 .focus .shadow .title{width: 260px; height: 65px;padding-left: 30px;padding-top: 20px;}
 .focus .shadow .title a{ text-decoration:none; color:#fff; font-size:10px; font-weight:bolder; overflow:hidden; }
