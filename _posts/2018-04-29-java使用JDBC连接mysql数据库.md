@@ -360,3 +360,130 @@ public class PreparedStatementTest
 |8193|5380|
 
 很明显，PreparedStatement的**效率要高一些**。
+
+## PreparedStatement创建表并写入实时数据
+
+### 获得相应位数的字符
+
+```java
+public class GetString
+{
+	public static void main(String[] args)
+	{
+		String str = "窗前明月光，疑是地上霜。";
+		int len = str.length();
+		System.out.println(len);
+		for(int i=0;i<len;i++)
+		{
+			System.out.print(str.charAt(i));
+
+		}
+		System.out.println();
+		for(int i=0;i<len;i=i+2)
+		{
+			System.out.println(str.substring(i, i+2));
+		}
+	}
+}
+```
+
+### 获取时间
+
+```java
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class GetTime
+{
+	public static void main(String[] args)
+	{
+		Date day=new Date();    
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+		System.out.println(df.format(day));
+	}
+}
+```
+
+由于程序执行时间很快，第一列时间不设置为关键字(primary key)。
+
+```java
+import java.sql.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class DataBasic 
+{
+  public static void main(String[] args)
+  {
+      // 驱动程序名
+      String driver = "com.mysql.jdbc.Driver";
+      // URL指向要访问的数据库名scutcs
+      String url = "jdbc:mysql://127.0.0.1:3306/scutcs";
+      // MySQL配置时的用户名
+      String user = "root"; 
+      // MySQL配置时的密码
+      String password = "zhang110";
+      try 
+      { 
+          // 加载驱动程序
+          Class.forName(driver);
+          // 连续数据库
+          Connection conn = DriverManager.getConnection(url, user, password);
+          if(!conn.isClosed()) 
+              System.out.println("Succeeded connecting to the Database!");
+          // pstatement用来执行SQL语句
+          // 1.创建数据表SQL语句
+          String sql_create = "create table if not exists databasic"
+          		+ "(dtime varchar(19) not null,"
+				+ "ddata varchar(4) not null);";
+				//+ "primary key(dtime));";
+          PreparedStatement pstatementCreate = conn.prepareStatement(sql_create);
+          //执行SQL语句
+          int rs_create = pstatementCreate.executeUpdate();
+          PreparedStatement pstatement = conn.prepareStatement("insert into databasic values(?, ?)");
+          String str="EFE334EF6D4A5C3D3A3B7E7EEFE334EF6D4A5C3D3A3B7E7EEFE334EF6D4A5C3D3A3B7E7EEFE334EF6D4A5C3D3A3B7E7E";
+          //注意主键“时间”不能重复
+          for(int i=0;i<str.length();i=i+4)
+          {
+				Date time=new Date();    
+				SimpleDateFormat tf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+				//System.out.println(tf.format(time));
+		        pstatement.setString(1, tf.format(time));
+		        pstatement.setString(2, str.substring(i, i+4));
+				pstatement.executeUpdate();
+          }
+          // 2.查询数据表
+	      String sql_select = "select * from databasic";
+          ResultSet rs_select = pstatement.executeQuery(sql_select);
+          System.out.println("-----------------------------------------------------");
+          System.out.println("执行结果如下所示:");
+          System.out.println("-----------------------------------------------------");
+          System.out.println(" 时间" + "\t" + "\t" + "\t" + " 数据");
+          System.out.println("-----------------------------------------------------");
+          String dtime = null;
+          String ddata = null;
+          while(rs_select.next()) 
+          {
+              // 选择数据
+              dtime = rs_select.getString("dtime");
+              ddata = rs_select.getString("ddata");
+              // 输出结果
+              System.out.println(dtime + "\t" + ddata);
+          }
+          rs_select.close();
+          conn.close();
+      }
+      catch(ClassNotFoundException e)
+      {
+          System.out.println("Sorry,can't find the Driver!"); 
+          e.printStackTrace();
+      }
+      catch(SQLException e)
+      {
+          e.printStackTrace();
+      }
+      catch(Exception e)
+      {
+          e.printStackTrace();
+      }
+  }
+}
+```
