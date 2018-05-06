@@ -1,4 +1,6 @@
 header {
+    position: fixed;
+    width: 100%;
     background: #222;
     height: 52px;
     color: #9d9d9d;
@@ -13,7 +15,6 @@ header {
         }
     }
     .wrapper {
-        position: fixed;
         width: 1140px;
         margin: 0 auto;
         line-height: 52px;
