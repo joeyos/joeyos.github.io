@@ -443,15 +443,15 @@ public class DataBasic
           //注意主键“时间”不能重复
           for(int i=0;i<str.length();i=i+4)
           {
-				Date time=new Date();    
-				SimpleDateFormat tf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
+				Date time=new Date();
+				SimpleDateFormat tf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				//System.out.println(tf.format(time));
-		        pstatement.setString(1, tf.format(time));
-		        pstatement.setString(2, str.substring(i, i+4));
+				pstatement.setString(1, tf.format(time));
+				pstatement.setString(2, str.substring(i, i+4));
 				pstatement.executeUpdate();
           }
           // 2.查询数据表
-	      String sql_select = "select * from databasic";
+		  String sql_select = "select * from databasic";
           ResultSet rs_select = pstatement.executeQuery(sql_select);
           System.out.println("-----------------------------------------------------");
           System.out.println("执行结果如下所示:");
