@@ -3,7 +3,7 @@ header {
     width: 100%;
     top: 0px;
     z-index: 50;
-    background: #673AB7;
+    background: #9C27B0;
     height: 52px;
     color: #ccc;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
@@ -47,7 +47,7 @@ header {
                         padding: 0 10px;
                         height: 52px;
                         &:hover {
-                            background-color: #3e108e;
+                            background-color: #77008C;
                         }
                         i {
                             margin-right: 5px;
@@ -55,7 +55,7 @@ header {
                     }
                     >.active {
                         color: #fff;
-                        background-color: #3e108e;
+                        background-color: #77008C;
                         // box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
                 }
@@ -119,8 +119,8 @@ header {
                 right: 0;
                 top:10px;
                 padding: 5px 10px;
-                background: #3e108e;
-                border: 1px solid #3e108e;
+                background: #77008C;
+                border: 1px solid #77008C;
                 border-radius: 4px;
                 color: #ccc;
                 font-size: 17px;
@@ -128,7 +128,7 @@ header {
                 transition: 0.4s ease;
             }
             >.active{
-                background: #3e108e;
+                background: #77008C;
                 color: #fff;
             }
             .nav-show{
@@ -149,13 +149,13 @@ header {
                 opacity: 0;
                 transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
                 ul {
-                    background: #673AB7;
+                    background: #9C27B0;
                     border-radius: 0 0 4px 4px;
                     box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.5);
                     li {
                         font-size: 14px;
                         display: block;
-                        border-bottom: 1px solid #3e108e;
+                        border-bottom: 1px solid #77008C;
                         a {
                             display: block;
                             padding: 0 10px;
@@ -167,7 +167,7 @@ header {
                         }
                         >.active {
                             color: #fff;
-                            background-color: #3e108e;
+                            background-color: #77008C;
                             box-shadow: none;
                         }
                     }
