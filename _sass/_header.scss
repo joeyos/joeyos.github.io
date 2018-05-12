@@ -3,13 +3,13 @@ header {
     width: 100%;
     top: 0px;
     z-index: 50;
-    background: #222;
+    background: #673AB7;
     height: 52px;
-    color: #9d9d9d;
+    color: #bbb;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     margin-bottom: 20px;
     a {
-        color: #9d9d9d;
+        color: #bbb;
         -webkit-transition: 0.2s ease;
         transition: 0.2s ease;
         &:hover {
@@ -47,7 +47,7 @@ header {
                         padding: 0 10px;
                         height: 52px;
                         &:hover {
-                            background-color: #000;
+                            background-color: #3e108e;
                         }
                         i {
                             margin-right: 5px;
@@ -55,7 +55,7 @@ header {
                     }
                     >.active {
                         color: #fff;
-                        background-color: #000;
+                        background-color: #3e108e;
                         box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
                 }
@@ -119,16 +119,16 @@ header {
                 right: 0;
                 top:10px;
                 padding: 5px 10px;
-                background: #333;
-                border: 1px solid #333;
+                background: #3e108e;
+                border: 1px solid #3e108e;
                 border-radius: 4px;
-                color: #c9c9c9;
+                color: #fff;
                 font-size: 17px;
                 -webkit-transition: 0.4s ease;
                 transition: 0.4s ease;
             }
             >.active{
-                background: #000;
+                background: #3e108e;
                 color: #fff;
             }
             .nav-show{
@@ -167,7 +167,7 @@ header {
                         }
                         >.active {
                             color: #fff;
-                            background-color: #000;
+                            background-color: #3e108e;
                             box-shadow: none;
                         }
                     }
