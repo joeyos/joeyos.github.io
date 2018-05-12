@@ -3,7 +3,7 @@ header {
     width: 100%;
     top: 0px;
     z-index: 50;
-    background: #9C27B0;
+    background: #9C27B0;//#673AB7
     height: 52px;
     color: #ccc;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
@@ -47,7 +47,7 @@ header {
                         padding: 0 10px;
                         height: 52px;
                         &:hover {
-                            background-color: #77008C;
+                            background-color: #77008C;//#3e108e
                         }
                         i {
                             margin-right: 5px;
