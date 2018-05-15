@@ -25,7 +25,7 @@
 /*= effect-1 css =*/
 .effect-1{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #673AB7;/*rgb(225, 49, 87);*/}
 .effect-1 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
-
+/*= effect-1 css end =*/
 
 /*= effect-2 css =*/
 .effect-2{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #673AB7;/*rgb(229, 100, 43);*/}
