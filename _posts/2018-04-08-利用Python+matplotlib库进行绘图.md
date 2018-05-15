@@ -2,8 +2,8 @@
 layout: post
 title: "利用Python+matplotlib库进行绘图"
 date: 2018-04-08
-categories: python
-tags: python matplotlib
+categories: Python
+tags: Python Matplotlib
 author: Quan Zhang
 ---
 

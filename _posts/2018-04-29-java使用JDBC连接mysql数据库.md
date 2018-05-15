@@ -2,8 +2,8 @@
 layout: post
 title: "java使用JDBC连接mysql数据库"
 date: 2018-04-29
-categories: java
-tags: java mysql
+categories: Java
+tags: Java Mysql
 author: Quan Zhang
 ---
 
