@@ -19,7 +19,7 @@ windows系统在python官网下载exe文件安装即可，**记住安装路径**
 
 ### 下载matplotlib库
 
-在这个网站上下载正确版本的matplotlib https://pypi.python.org/pypi/matplotlib/ 
+在这个网站上下载正确版本的[matplotlib.](https://pypi.python.org/pypi/matplotlib/)
 
 注意正确版本的matplotlib是指对应所安装的python型号和系统的版本，例如我的电脑下载的是3.6版本32位系统的python，就要找到带有cp36(表示3.6版）和win32字样的matplotlib，版本若不对会提示版本错误，安装不了。电脑系统若是64位，但安装的python是32位的话，还是需要安装32位的matplotlib。
 

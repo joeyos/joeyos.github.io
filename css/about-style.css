@@ -8,32 +8,35 @@
 	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
 	-o-box-shadow: 0 0 20px rgba(0,0,0,0.8);
 	border-radius: 100px/10px;
-	height:350px;width: 280px; float: left; margin: 15px 2.5%; background-color: #1F1F1F; text-align: center; position: relative;}
+	height:350px;width: 280px; 
+	float: left; margin: 15px 2.5%; 
+	/*background-color: #1F1F1F;*/
+	text-align: center; position: relative;}
 .single-member:hover {
 	box-shadow: 0 0 35px rgba(0,0,0,0.8);
 	-webkit-box-shadow: 0 0 35px rgba(0,0,0,0.8);
 	-moz-box-shadow: 0 0 35px rgba(0,0,0,0.8);
 	-o-box-shadow: 0 0 35px rgba(0,0,0,0.8);}
 .member-image img{max-width: 100px; max-height: 100px; vertical-align: middle;}
-.single-member .about-h3 {color:#ccc;font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
-.single-member .about-h5 {color:#ccc;font-size: 16px; font-weight: normal; margin: 0 0 15px; line-height: 22px;}
-.single-member .about-p {font-family: '微软雅黑';color:#ccc;font-size: 13px; font-weight: normal; line-height: 25px; margin: 0px auto; padding: 0 20px;text-align: left;}
-.single-member .about-p .about-a {color: #ccc;text-decoration: none; }
+.single-member .about-h3 {/*color:#ccc;*/font-size: 24px; font-weight: normal; margin: 10px 0 0; text-transform: uppercase;}
+.single-member .about-h5 {/*color:#ccc;*/font-size: 16px; font-weight: normal; margin: 0 0 15px; line-height: 22px;}
+.single-member .about-p {font-family: '微软雅黑';/*color:#ccc;*/font-size: 13px; font-weight: normal; line-height: 25px; margin: 0px auto; padding: 0 20px;text-align: left;}
+.single-member .about-p .about-a {color: #3e108e;text-decoration: none; }
 .single-member .about-p .about-a:hover {color: #fff;text-decoration: none;}
 /*= common css to all effects end =*/
 
 /*= effect-1 css =*/
-.effect-1{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #673AB7;/*rgb(225, 49, 87);*/}
+.effect-1{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;/*background-color: #673AB7;*//*rgb(225, 49, 87);*/}
 .effect-1 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
 /*= effect-1 css end =*/
 
 /*= effect-2 css =*/
-.effect-2{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #673AB7;/*rgb(229, 100, 43);*/}
+.effect-2{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;/*background-color: #673AB7;*//*rgb(229, 100, 43);*/}
 .effect-2 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
 /*= effect-2 css end =*/
 
 /*= effect-3 css =*/
-.effect-3{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;background-color: #673AB7;/*rgb(31, 181, 84);*/}
+.effect-3{border-radius: 5px 5px 5px 5px; margin-bottom: 60px; padding-bottom: 40px;/*background-color: #673AB7;*//*rgb(31, 181, 84);*/}
 .effect-3 .member-image {border: 2px solid #fff; border-radius: 100%; display: inline-block; margin-top: -50px; overflow: hidden; transition: 0.3s;}
 /*= effect-3 css end =*/
 
