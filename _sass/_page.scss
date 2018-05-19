@@ -223,6 +223,9 @@
             transform-origin: 100% 0;
             transform: scale(0.1);
             transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
+            .side {
+                background-color: #f8f8fd;
+            }
         }
         .right-show {
             //z-index: 999;
