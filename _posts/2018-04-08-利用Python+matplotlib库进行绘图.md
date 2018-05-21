@@ -27,14 +27,14 @@ windows系统在python官网下载exe文件安装即可，**记住安装路径**
 
 ```
 C:\Users\Administrator\AppData
-\Local\Programs\Python\Python36-32\script
+\Local\Programs\Python\Python36\script
 ```
 
-注意这个目录里面有pip3.6，利用cmd命令行的cd命令进入此文件夹目录下。
+注意这个目录里面有pip3.6.exe，利用cmd命令行的cd命令进入此文件夹目录下。
 
 ### 安装
 
-在目标路径下输入pip3.6 install matplotlib-2.2.0rc1-cp36-cp36m-win32.whl
+在目标路径下输入pip install matplotlib-2.2.0rc1-cp36-cp36m-win32.whl
 
 **可能错误1：** pip版本需要更新，按照错误提示更新即可。
 
