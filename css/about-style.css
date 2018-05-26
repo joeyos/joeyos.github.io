@@ -7,7 +7,7 @@
 /*= common css to all effects =*/
 .single-member{
 	box-shadow: 0 0 20px rgba(0,0,0,0.8);
-	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.8);
 	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
 	-o-box-shadow: 0 0 20px rgba(0,0,0,0.8);
 	border-radius: 100px/10px;
@@ -17,7 +17,7 @@
 	text-align: center; position: relative;}
 .single-member:hover {
 	box-shadow: 0 0 35px rgba(0,0,0,0.8);
-	-webkit-box-shadow: 0 0 35px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.8);
 	-moz-box-shadow: 0 0 35px rgba(0,0,0,0.8);
 	-o-box-shadow: 0 0 35px rgba(0,0,0,0.8);}
 .member-image img{max-width: 100px; max-height: 100px; vertical-align: middle;}
