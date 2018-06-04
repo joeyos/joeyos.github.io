@@ -3,7 +3,7 @@ header {
     width: 100%;
     top: 0px;
     z-index: 50;
-    background: #673AB7;
+    background: #044d6e;
     height: 52px;
     color: #f1f1f1;
     box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
@@ -47,7 +47,7 @@ header {
                         padding: 0 10px;
                         height: 52px;
                         &:hover {
-                            background-color: #3e108e;
+                            background-color: #003a54;
                         }
                         i {
                             margin-right: 5px;
@@ -55,7 +55,7 @@ header {
                     }
                     >.active {
                         color: #fff;
-                        background-color: #3e108e;
+                        background-color: #003a54;
                         // box-shadow: 0 25px 25px -15px rgba(255,255,255,0.93);
                     }
                 }
@@ -119,8 +119,8 @@ header {
                 right: 0;
                 top:10px;
                 padding: 5px 10px;
-                background: #3e108e;
-                border: 1px solid #3e108e;
+                background: #003a54;
+                border: 1px solid #003a54;
                 border-radius: 4px;
                 color: #ccc;
                 font-size: 17px;
@@ -128,7 +128,7 @@ header {
                 transition: 0.4s ease;
             }
             >.active{
-                background: #3e108e;
+                background: #003a54;
                 color: #fff;
             }
             .nav-show{
@@ -149,7 +149,7 @@ header {
                 opacity: 0;
                 transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
                 ul {
-                    background: #673AB7;
+                    background: #044d6e;
                     border-radius: 0 0 4px 4px;
                     box-shadow: 0px 3px 4px 1px rgba(0,0,0,0.5);
                     li {
@@ -167,7 +167,7 @@ header {
                         }
                         >.active {
                             color: #fff;
-                            background-color: #3e108e;
+                            background-color: #003a54;
                             box-shadow: none;
                         }
                     }
