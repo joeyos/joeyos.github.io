@@ -18,9 +18,16 @@ type: page
 
 热衷于图像处理与机器学习，对嵌入式有所了解。
 
+在向梦想走去的路上，感谢许多陪伴而行的时光客。人与人的相遇，正是如此偶然，又仿佛命中注定。
+
+若星辰彼此照耀，辉映天空；更是足迹相互叠加，延生为道路。
 ---
 
-### 关于本站   
+### 关于本站
+
+总想把时光留住，所以反复地唱那首老歌。
+
+歌声飘荡在水面，荡起一圈又一圈的年轮。
 
 驽马十驾，功在不舍！
 
@@ -42,6 +49,3 @@ type: page
 - Email：[zhangquan2014@foxmail.com](mailto:zhangquan2014@foxmail.com)
 - Zhihu：[zhangquan1995](https://www.zhihu.com/people/zhangquan1995)
 - Weibo：[zhangquan1995](https://weibo.com/zhangquan1995)
-
-
-{% include comments.html %}
