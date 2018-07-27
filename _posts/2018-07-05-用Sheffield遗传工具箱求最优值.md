@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "利用Sheffield遗传工具箱求解最优值"
+title: "用Sheffield遗传工具箱求最优值"
 date: 2018-07-05
 categories: 遗传算法 Matlab
 tags: 遗传算法 Matlab
@@ -91,7 +91,7 @@ bestX=trace(1,end);
 fprintf(['最优解：\nX=',num2str(bestX),'\nY=',num2str(bestY),'\n']);
 ```
 
-其中，$\circ$是每代的最优解，$*$是优化20代后的种群分布，$\circ$和$*$集中的点就是最优解。
+其中，$\circ$是每代的最优解，$\ast$是优化20代后的种群分布，$\circ$和$\ast$集中的点就是最优解。
 
 	最优解：
 	X=1.1491
