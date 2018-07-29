@@ -10,7 +10,7 @@ author: Quan Zhang
 * content
 {:toc} 
 
-## 两个数之和
+## 两数之和(哈希表)
 
 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
 
@@ -100,5 +100,78 @@ public int[] twoSum(int[] nums, int target) {
         map.put(nums[i], i);
     }
     throw new IllegalArgumentException("No two sum solution");
+}
+```
+
+## 两数相加(链表)
+
+给定两个非空链表来表示两个非负整数。位数按照逆序方式存储，它们的每个节点只存储单个数字。将两数相加返回一个新的链表。
+
+你可以假设除了数字 0 之外，这两个数字都不会以零开头。
+
+**示例:**
+
+	输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+	输出：7 -> 0 -> 8
+	原因：342 + 465 = 807
+
+```java
+class ListNode {
+     int val;
+     ListNode next;
+     ListNode(int x) { val = x; }
+ }
+public class Add {
+	// 数组转链表
+	public ListNode arrToListNode(int[] arr){
+		ListNode dummyHead = new ListNode(0);
+		ListNode curr = dummyHead;
+		for(int i=0;i<arr.length;i++){
+			curr.next = new ListNode(arr[i]);
+			curr = curr.next;
+			System.out.print(arr[i]);
+		}
+		System.out.println();
+		return dummyHead.next;
+	}
+	// 打印链表
+	public void printListNode(ListNode l){
+		while(l != null){
+			System.out.print(l.val);
+			l=l.next;
+		}
+		System.out.println("");
+	}
+	// 两链表相加
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode p = l1, q = l2, curr = dummyHead;
+        int carry = 0;
+        while (p != null || q != null) {
+            int x = (p != null) ? p.val : 0;
+            int y = (q != null) ? q.val : 0;
+            int sum = carry + x + y;
+            carry = sum / 10;
+            curr.next = new ListNode(sum % 10);
+            curr = curr.next;
+            if (p != null) p = p.next;
+            if (q != null) q = q.next;
+        }
+        if (carry > 0) {
+            curr.next = new ListNode(carry);
+        }
+        return dummyHead.next;
+    }
+    public static void main(String[] args){
+    	int[] a1,a2;
+    	a1 = new int[]{1,2,7,4};//数值4721
+    	a2 = new int[]{3,6,4,8};//数值8463
+    	ListNode l1,l2,l3;
+    	l1 = new Add().arrToListNode(a1);
+    	l2 = new Add().arrToListNode(a2);
+    	l3 = new Add().addTwoNumbers(l1,l2);
+    	new Add().printListNode(l3);
+    	//打印链表48131(倒序)
+    }
 }
 ```
