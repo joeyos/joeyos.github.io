@@ -113,6 +113,8 @@ HashMap使用键（Key）计算Hashcode。HashSet使用成员对象来计算hash
 
 HashMap相对于HashSet较快，因为它是使用唯一的键获取对象。
 
+`HashMap的原理？线程不安全时自然谈到ConcurrentHashMap，他的实现原理？`
+
 ## 两数相加(链表)
 
 给定两个非空链表来表示两个非负整数。位数按照逆序方式存储，它们的每个节点只存储单个数字。将两数相加返回一个新的链表。
