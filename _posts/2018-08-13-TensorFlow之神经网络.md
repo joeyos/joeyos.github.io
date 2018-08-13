@@ -538,7 +538,7 @@ loss=tf.add_n(tf.get_collection('losses'))
 
     shadow_variable = decay x shadow_variable+(1-decay)xvariable
 
-shadow_variable为影子变量，variable为待更新的变量，decay为衰减率。如果提供了num_updates参数，则衰减率为$min{decay,\frac{1+num_updates}{10+num_updates}}$，通过ExponentialMovingAverage实现滑动平均：
+shadow_variable为影子变量，variable为待更新的变量，decay为衰减率。如果提供了num_updates参数，则衰减率为$min{decay,\frac{1+num\_updates}{10+num\_updates}}$，通过ExponentialMovingAverage实现滑动平均：
 
 
 ```python
