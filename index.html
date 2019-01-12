@@ -83,7 +83,7 @@ $(document).ready(function(){
         <div style="width:100%;float:left;">
             <div>
                 <i class="fa fa-tags"></i>
-                Tags
+                标签·Tags
             </div>
             <div class="tags-cloud">
                 {% assign first = site.tags.first %}
@@ -108,16 +108,16 @@ $(document).ready(function(){
                   {% assign base = temp | divided_by: 4 %}
                   {% assign remain = temp | modulo: 4 %}
                   {% if remain == 0 %}
-                    {% assign size = base | plus: 9 %}
+                    {% assign size = base | plus: 6 %}
                   {% elsif remain == 1 or remain == 2 %}
-                    {% assign size = base | plus: 9 | append: '.5' %}
+                    {% assign size = base | plus: 6 | append: '.5' %}
                   {% else %}
-                    {% assign size = base | plus: 10 %}
+                    {% assign size = base | plus: 8 %}
                   {% endif %}
                   {% if remain == 0 or remain == 1 %}
-                    {% assign color = 9 | minus: base %}
-                  {% else %}
                     {% assign color = 8 | minus: base %}
+                  {% else %}
+                    {% assign color = 6 | minus: base %}
                   {% endif %}
                   <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
                 {% endfor %}
