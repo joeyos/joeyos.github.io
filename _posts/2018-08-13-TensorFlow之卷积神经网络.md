@@ -2,8 +2,8 @@
 layout: post
 title: "TensorFlow之卷积神经网络"
 date: 2018-08-13
-categories: python 机器学习
-tags: python 机器学习
+categories: Python 机器学习
+tags: Python 机器学习
 author: Quan Zhang
 ---
 
