@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Solr集群+Zookeeper搭建分布式搜索系统"
+title: "Solr+Zookeeper搭建分布式系统"
 date: 2019-01-17
 categories: Java 分布式
 tags: Java 分布式

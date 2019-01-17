@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: "Linux CentOS7安装nginx图片服务器"
+title: "CentOS7安装Nginx图片服务器"
 date: 2019-01-17
 categories: Java Nginx
 tags: Java Nginx
