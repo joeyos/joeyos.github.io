@@ -10,7 +10,7 @@ type: page
 {:toc}
 
 
-### 关于我
+### About me
 
 对新事物充满好奇，喜欢逛技术论坛。
 
@@ -29,7 +29,7 @@ type: page
 
 ---
 
-### 关于本站
+### About site
 
 总想把时光留住，所以反复地唱那首老歌。
 
@@ -42,7 +42,7 @@ type: page
 ---
 
 
-### 联系我
+### Contact me
 
 - Github：[zhangquan1995](https://github.com/zhangquan1995)
 - CSDN：[zhangquan2015](https://blog.csdn.net/zhangquan2015)
