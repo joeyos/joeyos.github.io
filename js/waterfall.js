@@ -28,7 +28,7 @@
       core_tech: 'Ae & Edius',
       description: '献给悄悄流逝的四年时光'
     }, {
-      demo_link: 'https://zhangquan1995.github.io/ImgChange',
+      demo_link: 'https://joeyos.github.io/ImgChange',
       img_link: '/images/demo/ImgChange.jpg',
       code_link: 'https://github.com/zhangquan1995/ImgChange',
       title: '网页轮播图',
@@ -49,21 +49,21 @@
       core_tech: 'Qt & C++',
       description: 'A program made with Qt'
     }, {
-      demo_link: 'https://zhangquan1995.github.io/AdaptiveScreen',
+      demo_link: 'https://joeyos.github.io/AdaptiveScreen',
       img_link: '/images/demo/AdaptiveScreen.jpg',
       code_link: 'https://github.com/zhangquan1995/AdaptiveScreen',
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
       description: 'div长宽比自适应屏幕尺寸'
     }, {
-      demo_link: 'https://zhangquan1995.github.io/3DPhoto',
+      demo_link: 'https://joeyos.github.io/3DPhoto',
       img_link: '/images/demo/3DPhoto.jpg',
       code_link: 'https://github.com/zhangquan1995/3DPhoto',
       title: '3D图像切换',
       core_tech: 'CSS3',
       description: '百度前端学院3D图像切换'
     }, {
-      demo_link: 'https://zhangquan1995.github.io/AboutPage/',
+      demo_link: 'https://joeyos.github.io/AboutPage/',
       img_link: '/images/demo/AboutPage.jpg',
       code_link: 'https://github.com/zhangquan1995/AboutPage',
       title: 'css阴影',

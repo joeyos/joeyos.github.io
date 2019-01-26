@@ -41,11 +41,3 @@ type: page
 
 ---
 
-
-### Contact me
-
-- [Github](https://github.com/joeyos)
-- [CSDN](https://blog.csdn.net/zhangquan2015)
-- [Email](mailto:zhangquan2014@foxmail.com)
-- [Zhihu](https://www.zhihu.com/people/zhangquan1995)
-- [Weibo](https://weibo.com/zhangquan1995)
