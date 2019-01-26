@@ -14,9 +14,9 @@
      */
   var demoContent = [
 	{
-      demo_link: 'https://github.com/zhangquan1995/QQ_Manager',
+      demo_link: 'https://github.com/joeyos/QQ_Manager',
       img_link: '/images/demo/QQManager.jpg',
-      code_link: 'https://github.com/zhangquan1995/QQ_Manager',
+      code_link: 'https://github.com/joeyos/QQ_Manager',
       title: '腾讯电脑管家',
       core_tech: 'Qt & C++',
       description: '利用Qt制作的腾讯电脑管家'
@@ -30,42 +30,42 @@
     }, {
       demo_link: 'https://joeyos.github.io/ImgChange',
       img_link: '/images/demo/ImgChange.jpg',
-      code_link: 'https://github.com/zhangquan1995/ImgChange',
+      code_link: 'https://github.com/joeyos/ImgChange',
       title: '网页轮播图',
       core_tech: 'JavaScript',
       description: '图片自动切换，按钮切换'
     }, {
-      demo_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
+      demo_link: 'https://github.com/joeyos/LicensePlateRecognition',
       img_link: '/images/demo/LicensePlateRecognition.jpg',
-      code_link: 'https://github.com/zhangquan1995/LicensePlateRecognition',
+      code_link: 'https://github.com/joeyos/LicensePlateRecognition',
       title: 'Matlab车牌识别',
       core_tech: 'Matlab',
       description: 'License plate recognition'
     }, {
-      demo_link: 'https://github.com/zhangquan1995/QQbyQt',
+      demo_link: 'https://github.com/joeyos/QQbyQt',
       img_link: '/images/demo/QQbyQt.jpg',
-      code_link: 'https://github.com/zhangquan1995/QQbyQt',
+      code_link: 'https://github.com/joeyos/QQbyQt',
       title: 'QQ局域网聊天',
       core_tech: 'Qt & C++',
       description: 'A program made with Qt'
     }, {
       demo_link: 'https://joeyos.github.io/AdaptiveScreen',
       img_link: '/images/demo/AdaptiveScreen.jpg',
-      code_link: 'https://github.com/zhangquan1995/AdaptiveScreen',
+      code_link: 'https://github.com/joeyos/AdaptiveScreen',
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
       description: 'div长宽比自适应屏幕尺寸'
     }, {
       demo_link: 'https://joeyos.github.io/3DPhoto',
       img_link: '/images/demo/3DPhoto.jpg',
-      code_link: 'https://github.com/zhangquan1995/3DPhoto',
+      code_link: 'https://github.com/joeyos/3DPhoto',
       title: '3D图像切换',
       core_tech: 'CSS3',
       description: '百度前端学院3D图像切换'
     }, {
       demo_link: 'https://joeyos.github.io/AboutPage/',
       img_link: '/images/demo/AboutPage.jpg',
-      code_link: 'https://github.com/zhangquan1995/AboutPage',
+      code_link: 'https://github.com/joeyos/AboutPage',
       title: 'css阴影',
       core_tech: 'CSS3',
       description: 'About子页css圆角+阴影'
