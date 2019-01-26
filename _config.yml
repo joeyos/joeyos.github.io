@@ -6,15 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Hello，Quanz！
+title: Hello，Joey！
 brief-intro: Embedded Image Processing
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zhangquan1995.github.io" # the base hostname & protocol for your site
+url: "https://joeyos.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-github_username:  zhangquan1995
+github_username:  joeyos
 email: zhangquan2014@foxmail.com
 weibo_username: zhangquan1995
 zhihu_username: zhangquan1995
@@ -22,7 +22,7 @@ zhihu_username: zhangquan1995
 description_footer:
 
 #gitment
-comment_gitment_repo: zhangquan1995.github.io
+comment_gitment_repo: joeyos.github.io
 comment_gitment_clientId: 61c2858fcad8e31a384a
 comment_gitment_clientSecret: a42b6e659f4321919ec21b8af2db7e41ffbaf9e2
 

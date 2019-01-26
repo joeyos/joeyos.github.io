@@ -1,6 +1,6 @@
 ﻿# 博客主页
 
-https://zhangquan1995.github.io/
+https://joeyos.github.io/
 
 
 ![](/images/page.jpg)

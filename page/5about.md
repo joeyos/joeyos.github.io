@@ -44,8 +44,8 @@ type: page
 
 ### Contact me
 
-- Github：[zhangquan1995](https://github.com/zhangquan1995)
-- CSDN：[zhangquan2015](https://blog.csdn.net/zhangquan2015)
-- Email：[zhangquan2014@foxmail.com](mailto:zhangquan2014@foxmail.com)
-- Zhihu：[zhangquan1995](https://www.zhihu.com/people/zhangquan1995)
-- Weibo：[zhangquan1995](https://weibo.com/zhangquan1995)
+- [Github](https://github.com/joeyos)
+- [CSDN](https://blog.csdn.net/zhangquan2015)
+- [Email](mailto:zhangquan2014@foxmail.com)
+- [Zhihu](https://www.zhihu.com/people/zhangquan1995)
+- [Weibo](https://weibo.com/zhangquan1995)
