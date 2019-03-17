@@ -7,7 +7,7 @@
 
 # Site settings
 title: Hello，Joey！
-brief-intro: Embedded Image Processing
+brief-intro: Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joeyos.github.io" # the base hostname & protocol for your site
 
