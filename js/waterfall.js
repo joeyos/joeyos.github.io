@@ -28,13 +28,6 @@
       core_tech: 'Ae & Edius',
       description: '献给悄悄流逝的四年时光'
     }, {
-      demo_link: 'https://joeyos.github.io/ImgChange',
-      img_link: '/images/demo/ImgChange.jpg',
-      code_link: 'https://github.com/joeyos/ImgChange',
-      title: '网页轮播图',
-      core_tech: 'JavaScript',
-      description: '图片自动切换，按钮切换'
-    }, {
       demo_link: 'https://github.com/joeyos/LicensePlateRecognition',
       img_link: '/images/demo/LicensePlateRecognition.jpg',
       code_link: 'https://github.com/joeyos/LicensePlateRecognition',
@@ -49,12 +42,26 @@
       core_tech: 'Qt & C++',
       description: 'A program made with Qt'
     }, {
+      demo_link: 'https://github.com/joeyos/SAR-imaging',
+      img_link: '/images/demo/SAR.jpg',
+      code_link: 'https://github.com/joeyos/SAR-imaging',
+      title: '合成孔径雷达成像',
+      core_tech: 'Matlab',
+      description: '几种传统雷达成像算法'
+    }, {
       demo_link: 'https://joeyos.github.io/AdaptiveScreen',
       img_link: '/images/demo/AdaptiveScreen.jpg',
       code_link: 'https://github.com/joeyos/AdaptiveScreen',
       title: 'Adaptive Screen',
       core_tech: 'CSS3',
       description: 'div长宽比自适应屏幕尺寸'
+    }, {
+      demo_link: 'https://joeyos.github.io/ImgChange',
+      img_link: '/images/demo/ImgChange.jpg',
+      code_link: 'https://github.com/joeyos/ImgChange',
+      title: '网页轮播图',
+      core_tech: 'JavaScript',
+      description: '图片自动切换，按钮切换'
     }, {
       demo_link: 'https://joeyos.github.io/3DPhoto',
       img_link: '/images/demo/3DPhoto.jpg',
