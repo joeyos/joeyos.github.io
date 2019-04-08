@@ -59,7 +59,7 @@
       demo_link: 'https://joeyos.github.io/ImgChange',
       img_link: '/images/demo/ImgChange.jpg',
       code_link: 'https://github.com/joeyos/ImgChange',
-      title: '网页轮播图',
+      title: '网页图片切换',
       core_tech: 'JavaScript',
       description: '图片自动切换，按钮切换'
     }, {
