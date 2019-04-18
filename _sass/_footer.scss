@@ -45,6 +45,15 @@
                 }
             }
         }
+		.visit {
+            a {
+                color: #f1f1f1;
+                transition: 0.3s ease;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:1200px) and (min-width: 770px) {
