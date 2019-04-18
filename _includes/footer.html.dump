@@ -7,7 +7,7 @@
             {% if site.description_footer %} {{site.description_footer}} {% endif %}
         </p>
         <p class="contact">
-            Â© 2019 by <span class="power"><a href="https://github.com/{{site.github_username}}" target="_blank">Joey</a></span>ï¼ŒContact me: {% if site.github_username %}
+            æ¼ 2019 by <span class="power"><a href="https://github.com/{{site.github_username}}" target="_blank">Joey</a></span>é”›å­‹ontact me: {% if site.github_username %}
             <a href="https://github.com/{{site.github_username}}" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> {% endif %} {% if site.email %}
             <a href="mailto:{{site.email}}" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> {% endif %} {% if site.weibo_username %}
             <a href="http://weibo.com/{{site.weibo_username}}" title="Weibo" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i></a> {% endif %} {% if site.zhihu_username %}
@@ -19,9 +19,9 @@
         </p>
         <p class="power">
             <span>
-                Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>ï¼ŒTheme by <a href="https://github.com/Cxd2014" target="_blank">CXD</a>
+                Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>é”›å­´heme by <a href="https://github.com/Cxd2014" target="_blank">CXD</a>
             </span>
-            <span id="busuanzi_container_site_pv">±¾Õ¾×Ü·ÃÎÊÁ¿<span id="busuanzi_value_site_pv"></span>´Î</span>
+            <span id="busuanzi_container_site_pv">æœ¬ç«™æ€»è®¿é—®é‡<span id="busuanzi_value_site_pv"></span>æ¬¡</span>
         </p>
     </div>
 </footer>
