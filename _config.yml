@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Hello，Joeyos！
+title: Joey's Blog
 brief-intro: Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://joeyos.github.io" # the base hostname & protocol for your site
@@ -18,6 +18,8 @@ github_username:  joeyos
 email: joeyos@foxmail.com
 weibo_username: zhangquan1995
 zhihu_username: zhangquan1995
+twitter_username: joeyos_qz
+facebook_username: profile.php?id=100011527722433
 
 description_footer:
 
