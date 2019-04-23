@@ -144,18 +144,13 @@
         }
     }
 }
-@media screen and (max-width:1200px) and (min-width: 770px) {
-    .page {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1200px) {
     .page {
         width: 100%;
         .left {
             width: 100%;
             float: left;
-            padding: 10px 14px;
+            padding: 0px 14px;
             font-size: 14px;
             >h1 {
                 font-size: 25px;
