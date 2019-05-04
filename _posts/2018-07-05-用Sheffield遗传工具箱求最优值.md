@@ -2,8 +2,8 @@
 layout: post
 title: "用Sheffield遗传工具箱求最优值"
 date: 2018-07-05
-categories: 遗传算法 Matlab
-tags: 遗传算法 Matlab
+categories: Matlab
+tags: Matlab
 author: Quan Zhang
 ---
 
