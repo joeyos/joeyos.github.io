@@ -7,6 +7,9 @@ tags: Java 分布式
 author: Quan Zhang
 ---
 
+* content
+{:toc} 
+
 ## 安装solr
 
 前提，已经安装tomcat和jdk。

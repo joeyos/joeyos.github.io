@@ -7,6 +7,9 @@ tags: Java Linux
 author: Quan Zhang
 ---
 
+* content
+{:toc} 
+
 ## 配置jdk环境
 
 ### 配置
