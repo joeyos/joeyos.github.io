@@ -33,40 +33,49 @@ tomcat1是8080端口，使tomcat2用8081端口
 
 查看防火墙端口配置文件：
 
-```
+```shell
 vi /etc/sysconfig/iptables
 ```
-```
+
+```shell
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 ```
+
 添加两个可访问端口：
-```
+
+```shell
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 8081 -j ACCEPT
 ```
+
 保存，重启防火墙
-```
+
+```shell
 service iptables restart
 ```
 
 ### 更改两个index.jsp主页
 
 在两个tomcat的webapps/ROOT/index.jsp里面加上-Port:8080或者-Port:8081以示区别：
-```
+
+```shell
 <div id="asf-box">
     <h1>${pageContext.servletContext.serverInfo}-Port:8080</h1>
 </div>
 ```
-```
+
+```shell
 <div id="asf-box">
     <h1>${pageContext.servletContext.serverInfo}-Port:8081</h1>
 </div>
 ```
+
 ### 反向代理
 
 把原来/usr/local/nginx/conf/nginx.conf末尾的`server`改为如下：并添加upstream tomcats：
-```
+
+```shell
     upstream tomcats{
         server 192.168.52.129:8080 weight=2;
         server 192.168.52.129:8081;
@@ -95,15 +104,17 @@ service iptables restart
 - 启动两个tomcat
 - 运行nginx程序
 
-```
+```shell
 ./nginx -s reload
 ```
+
 #### 执行./nginx -s reload找不到nginx.pid
 
 nginx: [error] open() "/var/run/nginx/nginx.pid" failed (2: No such file or directory)
 
 在sbin文件夹下执行如下命令，指定配置文件路径：
-```
+
+```shell
 ./nginx -c /usr/local/nginx/conf/nginx.conf
 ```
 
@@ -145,7 +156,7 @@ nginx: [error] open() "/var/run/nginx/nginx.pid" failed (2: No such file or dire
 
 ### 安装libevent和perl
 
-```
+```shell
 yum -y install libevent
 
 yum install perl
@@ -181,7 +192,7 @@ yum install perl
 
 修改/root/FastDFS/conf/tracker.conf文件。
 
-```
+```shell
 base_path=/home/fastdfs/tracker
 ```
 
@@ -189,20 +200,23 @@ base_path=/home/fastdfs/tracker
 
 #### 启动tracker服务
 
-```
+```shell
 /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf
 ```
+
 重新启动：
-```
+
+```shell
 /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart
 ```
+
 ### 配置storage服务
 
 如果是在不同的服务器安装，需要重新执行配置tracker之前的四步。
 
 配置storage服务：修改/root/FastDFS/conf/storage.conf文件
 
-```
+```shell
 base_path=/home/fastdfs/storage
 store_path0=/home/fastdfs/storage
 tracker_server=192.168.52.129:22122
@@ -210,9 +224,10 @@ tracker_server=192.168.52.129:22122
 
 #### 启动storage服务
 
-```
+```shell
 /usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart
 ```
+
 ### 测试服务
 
 - 进入/etc/fdfs/文件夹
@@ -220,18 +235,20 @@ tracker_server=192.168.52.129:22122
 - 复制一个图片zxc.jpg到/etc/fdfs/文件夹
 - 编辑client.conf
 
-```
+```shell
 base_path=/home/fastdfs/client
 tracker_server=192.168.52.129:22122
 ```
 
 #### 测试
 
-```
+```shell
 /usr/bin/fdfs_test /etc/fdfs/client.conf upload zxc.jpg
 ```
+
 如果显示如下信息则成功：
-```
+
+```shell
 tracker_query_storage_store_list_without_group: 
         server 1. group_name=, ip_addr=192.168.52.129, port=23000
 
@@ -262,7 +279,7 @@ example file url: http://192.168.52.129/group1/M00/00/00/wKg0gVvliFOAFTCcAAIEbfj
 2. 改/root/fastdfs-nginx-module/src/config文件，把其中的三个local去掉
 3. 安装nginx重新config
 
-```
+```shell
 ./configure \
 --prefix=/usr/local/nginx \
 --pid-path=/var/run/nginx/nginx.pid \
@@ -277,20 +294,22 @@ example file url: http://192.168.52.129/group1/M00/00/00/wKg0gVvliFOAFTCcAAIEbfj
 --http-scgi-temp-path=/var/temp/nginx/scgi \
 --add-module=/root/fastdfs-nginx-module/src
 ```
+
 4. make
 5. make install
 6. /root/fastdfs-nginx-module/src/mod_fastdfs.conf文件复制到/etc/fdfs目录下
 7. 编辑/etc/fdfs/mod_fastdfs.conf
 
-```
+```shell
 base_path=/tmp
 tracker_server=192.168.52.129:22122
 url_hava_group_name=true
 store_path0=/home/fastdfs/storage
 ```
+
 8. 在nginx的配置文件/usr/local/nginx/conf/nginx.conf中修改Server：
 
-```
+```shell
     server {
         listen       80;
         server_name  localhost;
@@ -303,11 +322,13 @@ store_path0=/home/fastdfs/storage
                 ngx_fastdfs_module;
         }
 ```
+
 9. libfdfsclient.so拷贝至/usr/lib下
 
-```
+```shell
 cp /usr/lib64/libfdfsclient.so /usr/lib/
 ```
+
 10. 启动nginx，浏览器访问localhost
 11. 测试：/usr/bin/fdfs_test /etc/fdfs/client.conf upload girl.jpg
 12. 访问生成的链接http://192.168.52.129/group1/M00/00/00/wKg0gVvmcmCAXXqFAAChaTZy5ds776_big.jpg
@@ -317,17 +338,21 @@ cp /usr/lib64/libfdfsclient.so /usr/lib/
 1. 检查防火墙是否端口可访问
 
 
-```
+```shell
 vi /etc/sysconfig/iptables
 ```
+
 检查如下端口是否打开：
-```
+
+```shell
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 22122 -j ACCEPT
 -A INPUT -m state --state NEW -m tcp -p tcp --dport 23000 -j ACCEPT
 ```
-保存，重启防火墙
-```
+
+保存，重启防火墙:
+
+```shell
 service iptables restart
 ```
 

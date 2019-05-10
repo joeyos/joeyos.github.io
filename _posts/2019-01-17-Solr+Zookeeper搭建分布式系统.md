@@ -24,7 +24,7 @@ author: Quan Zhang
 - 复制cp /root/solr-4.10.3/example/solr /usr/local/solrhome
 - 在solr的web.xml中配置solrhome路径
 
-```
+```shell
   <!-- People who want to hardcode their "Solr Home" directly into the
        WAR File can set the JNDI property here...
    -->
@@ -35,6 +35,7 @@ author: Quan Zhang
        <env-entry-type>java.lang.String</env-entry-type>
     </env-entry>
 ```
+
 - 启动tomcat，http://192.168.52.129:8080/solr-4.10.3/
 
 ### 无法访问solr
@@ -46,7 +47,7 @@ author: Quan Zhang
 2. 在webapps/solr-4.10.3新建文件夹resource，从~/solr-4.10.3/example/resources/中拷贝log4j.properties到此文件夹
 3. 注意solrhome在web.xml的配置路径/usr/local/solr/solrhome的solr/solrhome名称因人而异
 
-```
+```shell
 [root@localhost solr-4.10.3]# cp ~/solr-4.10.3/example/resources/log4j.properties ./resources/
 ```
 
@@ -62,10 +63,11 @@ author: Quan Zhang
 
 第一步：把IKAnalyzer依赖的jar包添加到solr工程中。把分析器使用的扩展词典添加到classpath中。
 
-```
+```shell
 cp IKAnalyzer2012FF_u1.jar /usr/local/solr/tomcat7/webapps/solr-4.10.3/WEB-INF/lib
 ```
-```
+
+```shell
 cp ext_stopword.dic  IKAnalyzer.cfg.xml mydict.dic /usr/local/solr/tomcat7/webapps/solr-4.10.3/WEB-INF/classes
 ```
 
@@ -73,13 +75,15 @@ cp ext_stopword.dic  IKAnalyzer.cfg.xml mydict.dic /usr/local/solr/tomcat7/webap
 
 修改/usr/local/solr/solrhome/collection1/conf/schema.xml
 
-```
+```shell
 <fieldType name="text_ik" class="solr.TextField">
   <analyzer class="org.wltea.analyzer.lucene.IKAnalyzer"/>
 </fieldType>
 ```
+
 设置要查询的关键词：
-```
+
+```shell
 <field name="item_title" type="text_ik" indexed="true" stored="true"/>
 <field name="item_sell_point" type="text_ik" indexed="true" stored="true"/>
 <field name="item_price"  type="long" indexed="true" stored="true"/>
@@ -93,6 +97,7 @@ cp ext_stopword.dic  IKAnalyzer.cfg.xml mydict.dic /usr/local/solr/tomcat7/webap
 <copyField source="item_category_name" dest="item_keywords"/>
 <copyField source="item_desc" dest="item_keywords"/>
 ```
+
 ## solr集群(solr+zookeeper)
 
 solrClound需要用到solr+zookeeper。
@@ -130,7 +135,8 @@ solrClound需要用到solr+zookeeper。
 - 启动，zookeeper目录下有个bin/zkServer.sh start启动服务
 
 新建shell脚本zookeeper-start-all.sh，并chmod -x zookeeper-start-all.sh
-```
+
+```shell
 zookeeper01/bin/zkServer.sh start
 zookeeper02/bin/zkServer.sh start
 zookeeper03/bin/zkServer.sh start
@@ -140,7 +146,8 @@ zookeeper03/bin/zkServer.sh start
 - 查看服务状态：./zkServer.sh status
 
 正确开启的状态信息，否则查看防火墙及配置文件端口号
-```
+
+```shell
 [root@localhost solr-cloud]# ./zookeeper-status
 JMX enabled by default
 Using config: /usr/local/solr-cloud/zookeeper01/bin/../conf/zoo.cfg
@@ -168,43 +175,56 @@ Mode: follower
 注意tomcat04的端口1不能为8009，有冲突。
 
 3. 从单机版的solr拷贝webapps/solr到tomcat【重命名为solr，不能为solr-4.10.3，否则后面启动的时候只有一个active，其他都是Recovering】
-```
+
+```shell
 cp -r /usr/local/solr/tomcat7/webapps/solr-4.10.3/ /usr/local/solr-cloud/tomcat04/webapps/
 ```
+
 4. 拷贝单击版的solrhome到/usr/local/solr-cloud，拷贝4份，solrhome01-solrhome04，修改/usr/local/solr-cloud/solrhome01的web.xml的host、hostPort两个属性，8081-8084端口依情况而定。
-```
+
+```shell
 vi tomcat04/webapps/solr-4.10.3/WEB-INF/web.xml
 ```
-```
+
+```shell
 <str name="host">192.168.52.129</str>
 <int name="hostPort">8081</int>
 ```
+
 5. 上传任意solrhome的配置文件到zookeeper。【确保zookeeper已经启动】
-```
+
+```shell
 /root/solr-4.10.3/example/scripts/cloud-scripts/zkcli.sh
 ```
+
 在/root/solr-4.10.3/example目录下执行 java -jar start.jar 命令。 Ctrl+C或另打开一个连接窗口
-```
+
+```shell
 ./zkcli.sh -zkhost 192.168.52.129:2181,192.168.52.129:2182,192.168.52.129:2183 -cmd upconfig -confdir /usr/local/solr-cloud/solrhome01/collection1/conf -confname myconf
 ```
+
 6. 查看是否上传成功，使用zookeeper的zkCli.sh，然后ls /configs/myconf
 7. 在每个tomcat告诉solr zookeeper的位置，在如下文件如下位置添加JAVA_OPTS：【注意ip地址和端口号】
 
 vi /usr/local/solr-cloud/tomcat04/bin/catalina.sh
-```
+
+```shell
 # Uncomment the following line to make the umask available when using the
 # org.apache.catalina.security.SecurityListener
 #JAVA_OPTS="$JAVA_OPTS -Dorg.apache.catalina.security.SecurityListener.UMASK=`umask`"
 
 JAVA_OPTS="-DzkHost=192.168.52.129:2181,192.168.52.129:2182,192.168.52.129:2183"
 ```
+
 8. 启动全部tomcat
 
 查看某个tomcat是否成功启动：
-```
+
+```shell
 tail -f /usr/local/solr-cloud/tomcat04/logs/catalina.out
 ```
-```
+
+```shell
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 Nov 14, 2018 8:46:31 AM org.apache.catalina.startup.HostConfig deployDirectory
@@ -223,11 +243,12 @@ tomcat8开始，默认启动的是NIO模式，7默认启动的是BIO模式，还
 
 10. 集群分片
 
-```
+```shell
 http://192.168.52.129:8081/solr/admin/collections?action=CREATE&name=collection2&numShards=2&replicationFactor=2
 ```
+
 假使不用collection1，可以删除collection1：
 
-```
+```shell
 http://192.168.52.129:8081/solr/admin/collections?action=DELETE&name=collection1
 ```

@@ -13,25 +13,25 @@ author: Quan Zhang
 
 ### 安装gcc
 
-```
+```shell
 yum -y install gcc-c++
 ```
 
 ### 安装PCRE正则表达式解析
 
-```
+```shell
 yum install -y pcre pcre-devel
 ```
 
 ### 安装zlib解压缩
 
-```
+```shell
 yum install -y zlib zlib-devel
 ```
 
 ### 安装openssl
 
-```
+```shell
 yum install -y openssl openssl-devel
 ```
 
@@ -47,16 +47,18 @@ yum install -y openssl openssl-devel
 - x解压
 - v进度
 - f指定文件
-```
+
+```shell
 tar -zxvf nginx-1.8.0.tar.gz
 ```
+
 ### 新建临时缓存文件夹
 
 在`/var`下创建`temp`及`nginx`目录，即·/var/temp/nginx。
 
 ### 进入nginx-1.8.0运行configure
 
-```
+```shell
 ./configure \
 --prefix=/usr/local/nginx \
 --pid-path=/var/run/nginx/nginx.pid \
@@ -70,26 +72,33 @@ tar -zxvf nginx-1.8.0.tar.gz
 --http-uwsgi-temp-path=/var/temp/nginx/uwsgi \
 --http-scgi-temp-path=/var/temp/nginx/scgi
 ```
+
 ### make并且make install
 
 进入nginx-1.8.0，执行make和make install命令
-```
+
+```shell
 [root@localhost nginx-1.8.0]# make
 ```
-```
+
+```shell
 [root@localhost nginx-1.8.0]# make install
 ```
+
 ### 启动
 
 在/usr/local/nginx/sbin文件夹下：
-```
+
+```shell
 [root@localhost sbin]# ./nginx
 ```
+
 ### 查看进程
 
-```
+```shell
 ps aux|grep nginx
 ```
+
 应该有两个nginx进程`master`和`worker`
 
 ### 在浏览器输入服务器域名192.168.52.129访问nginx
@@ -98,12 +107,13 @@ ps aux|grep nginx
 
 查看防火墙端口配置文件：
 
-```
+```shell
 vim /etc/sysconfig/iptables
 ```
 
 如果访问`ip地址`无法显示`nginx`的欢迎页面，大概是防火墙的原因，设置防火墙`80`端口打开：
-```
+
+```shell
 [root@localhost ]# /sbin/iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 [root@localhost ]# cd /etc/init.d/iptables save
 [root@localhost ]# service iptables save
@@ -114,7 +124,7 @@ vim /etc/sysconfig/iptables
 
 `The service command supports only basic LSB actions (start, stop, restart, try-restart, reload, force-reload, status). For other actions, please try to use systemctl.`
 
-```
+```shell
 解决方法：
 systemctl stop firewalld 关闭防火墙
 yum install iptables-services 安装或更新服务
@@ -126,7 +136,7 @@ yum install iptables-services 安装或更新服务
 
 ### 关闭nginx
 
-```
+```shell
 [root@localhost sbin]# ./nginx -s stop
 ```
 
@@ -135,7 +145,8 @@ yum install iptables-services 安装或更新服务
 在文件/usr/local/nginx/conf/nginx.conf的末尾 `“}”`前添加如下`server`后保存:
 - 可以根据端口号区分：如80和81
 - 可以通过域名区分：修改host文件，test.taotao.com，并添加主页html-test/index.html
-```
+
+```shell
     server {
         listen       80;
         server_name  test.taotao.com;
@@ -154,18 +165,22 @@ yum install iptables-services 安装或更新服务
 ### 修改主机host文件
 
 推荐使用switchost软件，在主机host文件中添加如下映射：
-```
+
+```shell
 192.168.52.129 test.taotao.com
 ```
 
 ### 复制index主页
 
 复制nginx下的html文件夹为html-test
-```
+
+```shell
 cp -r html html-test
 ```
+
 编辑html-test里面的index.html文件，随便修改几个内容，以示区别。
-```
+
+```shell
 vi html-test/index.html
 ```
 
@@ -174,11 +189,14 @@ vi html-test/index.html
 #### 执行./nginx -s reload找不到nginx.pid
 
 如果出现如下错误：
-```
+
+```shell
 nginx: [error] open() "/var/run/nginx/nginx.pid" failed (2: No such file or directory)
 ```
+
 在sbin文件夹下执行如下命令，指定配置文件路径：
-```
+
+```shell
 ./nginx -c /usr/local/nginx/conf/nginx.conf
 ```
 
