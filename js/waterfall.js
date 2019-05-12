@@ -151,7 +151,7 @@ function initGrid() {
   var msnry = new Masonry('.grid', {
     // options
     itemSelector: '.grid-item',
-    columnWidth: 300,
+    columnWidth: 265,
     isFitWidth: true,
     gutter: 20
   })
