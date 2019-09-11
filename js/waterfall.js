@@ -66,7 +66,7 @@
       demo_link: 'https://joeyos.github.io/3DPhoto',
       img_link: '/images/demo/3DPhoto.jpg',
       code_link: 'https://github.com/joeyos/3DPhoto',
-      title: '网页3维图片切换',
+      title: '网页三维图片切换',
       core_tech: 'CSS3',
       description: '百度前端学院三维图片切换'
     }, {
