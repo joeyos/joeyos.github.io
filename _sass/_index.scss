@@ -78,6 +78,7 @@
         }
 		.grid {
             margin: 0 auto;
+			float: left;
             /* clearfix */
             &:after {
                 content: '';
