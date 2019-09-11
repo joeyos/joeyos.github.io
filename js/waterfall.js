@@ -19,28 +19,28 @@
       code_link: 'https://github.com/joeyos/QQ_Manager',
       title: '腾讯电脑管家',
       core_tech: 'Qt & C++',
-      description: '利用Qt制作的腾讯电脑管家'
+      description: '利用Qt制作的腾讯电脑管家界面'
     }, {
       demo_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
       img_link: '/images/demo/Graduate.jpg',
       code_link: 'http://v.youku.com/v_show/id_XMjgyNDEwMjU0OA==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2',
       title: '毕业电子相册',
       core_tech: 'Ae & Edius',
-      description: '献给悄悄流逝的四年时光'
+      description: '献给悄悄流逝的大学四年时光'
     }, {
       demo_link: 'https://github.com/joeyos/LicensePlateRecognition',
       img_link: '/images/demo/LicensePlateRecognition.jpg',
       code_link: 'https://github.com/joeyos/LicensePlateRecognition',
       title: 'Matlab车牌识别',
       core_tech: 'Matlab',
-      description: 'License plate recognition'
+      description: '用模板匹配法实现的车牌识别'
     }, {
       demo_link: 'https://github.com/joeyos/QQbyQt',
       img_link: '/images/demo/QQbyQt.jpg',
       code_link: 'https://github.com/joeyos/QQbyQt',
       title: 'QQ局域网聊天',
       core_tech: 'Qt & C++',
-      description: 'A program made with Qt'
+      description: '基于Qt实现的局域网聊天系统'
     }, {
       demo_link: 'https://github.com/joeyos/SAR-imaging',
       img_link: '/images/demo/SAR.jpg',
@@ -52,30 +52,30 @@
       demo_link: 'https://joeyos.github.io/AdaptiveScreen',
       img_link: '/images/demo/AdaptiveScreen.jpg',
       code_link: 'https://github.com/joeyos/AdaptiveScreen',
-      title: 'Adaptive Screen',
+      title: '网页自适应屏幕',
       core_tech: 'CSS3',
-      description: 'div长宽比自适应屏幕尺寸'
+      description: '网页根据长宽比自适应屏幕尺寸'
     }, {
       demo_link: 'https://joeyos.github.io/ImgChange',
       img_link: '/images/demo/ImgChange.jpg',
       code_link: 'https://github.com/joeyos/ImgChange',
       title: '网页图片切换',
       core_tech: 'JavaScript',
-      description: '图片自动切换，按钮切换'
+      description: '图片自动切换或点击按钮切换'
     }, {
       demo_link: 'https://joeyos.github.io/3DPhoto',
       img_link: '/images/demo/3DPhoto.jpg',
       code_link: 'https://github.com/joeyos/3DPhoto',
-      title: '3D图像切换',
+      title: '网页3维图片切换',
       core_tech: 'CSS3',
-      description: '百度前端学院3D图像切换'
+      description: '百度前端学院三维图片切换'
     }, {
       demo_link: 'https://joeyos.github.io/AboutPage/',
       img_link: '/images/demo/AboutPage.jpg',
       code_link: 'https://github.com/joeyos/AboutPage',
-      title: 'css阴影',
+      title: '网页圆角边框和阴影',
       core_tech: 'CSS3',
-      description: 'About子页css圆角+阴影'
+      description: '网页文本框设置圆角和阴影'
     }
   ];
 
