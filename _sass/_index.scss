@@ -205,24 +205,31 @@
 }
 @media screen and (max-width: 770px) {
     .page[index] {
-        .left>ul li {
-            h2 {
-                font-size: 22px;
-            }
-            .excerpt {
-                h2 {
-                    font-size: 20px;
-                }
-                h3 {
-                    font-size: 18px;
-                }
-                h4 {
-                    font-size: 16px;
-                }
-                li{
-                    margin: 0;
-                }
-            }
+        .left {
+			>ul {
+				li {
+					h2 {
+						font-size: 22px;
+					}
+					.excerpt {
+						h2 {
+							font-size: 20px;
+						}
+						h3 {
+							font-size: 18px;
+						}
+						h4 {
+							font-size: 16px;
+						}
+						li{
+							margin: 0;
+						}
+					}
+				}
+			}
+			.grid {
+				visibility: hidden;
+			}
         }
     }
 }
